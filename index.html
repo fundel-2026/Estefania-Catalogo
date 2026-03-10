@@ -105,6 +105,13 @@
                 return matchesBrand && matchesSearch;
             });
 
+            // Ordenar: Con imágenes primero
+            filtered.sort((a, b) => {
+                const hasA = (a.local_image || a.image_url) ? 1 : 0;
+                const hasB = (b.local_image || b.image_url) ? 1 : 0;
+                return hasB - hasA; // Si B tiene imagen y A no, B va primero
+            });
+
             inventoryGrid.innerHTML = '';
             carCount.textContent = filtered.length;
 
