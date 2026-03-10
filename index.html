@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Vehicle Inventory | multi-brand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Best Motors Premium</h1>
+            <p>Descubre nuestra colección exclusiva de vehículos seleccionados con los más altos estándares de calidad.
+            </p>
+        </header>
+
+        <div class="brand-filter-wrapper">
+            <div class="brand-filter" id="brandFilter">
+                <!-- Los botones de marcas se cargarán aquí -->
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" class="search-box" placeholder="Busca tu próximo vehículo...">
+            </div>
+            <div class="filter-stats">
+                Mostrando <span id="carCount">0</span> vehículos
+            </div>
+        </div>
+
+        <div class="inventory-grid" id="inventoryGrid">
+            <!-- Los vehículos se cargarán aquí dinámicamente -->
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Best Motors Premium Dashboard. Diseñado para la excelencia.</p>
+        </footer>
+    </div>
+
+    <!-- Cargamos los datos desde el archivo JS -->
+    <script src="data/vehicles.js"></script>
+
+    <script>
+        const inventoryGrid = document.getElementById('inventoryGrid');
+        const searchInput = document.getElementById('searchInput');
+        const carCount = document.getElementById('carCount');
+        const brandFilter = document.getElementById('brandFilter');
+
+        let allVehicles = [];
+        let currentFilter = 'All';
+        let searchTerm = '';
+
+        // Función para cargar los datos e inicializar
+        function initInventory() {
+            if (typeof vehicleData !== 'undefined') {
+                allVehicles = vehicleData;
+                createBrandFilters();
+                renderVehicles();
+            } else {
+                showError();
+            }
+        }
+
+        // Crear botones de marcas dinámicamente
+        function createBrandFilters() {
+            const brands = ['All', ...new Set(allVehicles.map(car => car.make))].sort();
+
+            brandFilter.innerHTML = '';
+            brands.forEach(brand => {
+                if (!brand) return;
+                const btn = document.createElement('button');
+                btn.className = `brand-btn ${brand === currentFilter ? 'active' : ''}`;
+
+                // Normalizar nombre para mostrar
+                const displayName = brand === 'All' ? '✨ Todas las marcas' :
+                    brand.charAt(0).toUpperCase() + brand.slice(1).toLowerCase();
+
+                btn.innerHTML = displayName;
+                btn.onclick = () => {
+                    document.querySelectorAll('.brand-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = brand;
+                    renderVehicles();
+                };
+                brandFilter.appendChild(btn);
+            });
+        }
+
+        // Función unificada de renderizado y filtrado
+        function renderVehicles() {
+            const filtered = allVehicles.filter(car => {
+                const matchesBrand = currentFilter === 'All' || car.make === currentFilter;
+                const matchesSearch =
+                    car.display_name?.toLowerCase().includes(searchTerm) ||
+                    car.model?.toLowerCase().includes(searchTerm) ||
+                    car.vin?.toLowerCase().includes(searchTerm) ||
+                    car.make?.toLowerCase().includes(searchTerm);
+                return matchesBrand && matchesSearch;
+            });
+
+            inventoryGrid.innerHTML = '';
+            carCount.textContent = filtered.length;
+
+            filtered.forEach((car, index) => {
+                const card = document.createElement('div');
+                card.className = 'car-card';
+                card.style.animationDelay = `${index * 0.05}s`;
+
+                const imgSrc = car.local_image || car.image_url || 'https://via.placeholder.com/400x250?text=Premium+Vehicle';
+                const formattedPrice = Number(car.price) > 0 ? `$${Number(car.price).toLocaleString()}` : 'Contactar';
+
+                card.innerHTML = `
+                    <div class="badge">${car.body_style || 'Certified'}</div>
+                    <div class="img-container">
+                        <img src="${imgSrc}" alt="${car.display_name}" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Loading...'">
+                    </div>
+                    <div class="content">
+                        <div class="car-header">
+                            <div class="car-year">${car.year} | ${car.make}</div>
+                            <h2 class="car-name">${car.model}</h2>
+                        </div>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <span class="spec-icon">🛣️</span> ${car.mileage || 'N/A'} mi
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">⚙️</span> ${car.transmission || 'Auto'}
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">🎨</span> ${car.ext_color || 'N/A'}
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-icon">🆔</span> ${car.vin ? car.vin.slice(-6) : 'N/A'}
+                            </div>
+                        </div>
+                        <div class="price-container">
+                            <div class="price">
+                                ${formattedPrice}
+                                <span>+ tax</span>
+                            </div>
+                            <a href="${car.vdp_url}" target="_blank" class="btn-view">Ver Detalles</a>
+                        </div>
+                    </div>
+                `;
+                inventoryGrid.appendChild(card);
+            });
+        }
+
+        // Buscador
+        searchInput.addEventListener('input', (e) => {
+            searchTerm = e.target.value.toLowerCase();
+            renderVehicles();
+        });
+
+        function showError() {
+            inventoryGrid.innerHTML = `
+                <div style="grid-column: 1/-1; text-align: center; padding: 60px; background: rgba(255,0,0,0.05); border-radius: 24px; border: 1px dashed rgba(255,0,0,0.2);">
+                    <h3 style="color: #ff4d4d;">⚠️ Error de Conexión</h3>
+                    <p>No pudimos cargar los datos del inventario.</p>
+                </div>`;
+        }
+
+        // Iniciar
+        initInventory();
+    </script>
+
+</body>
+
+</html>
