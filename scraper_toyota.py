@@ -102,7 +102,11 @@ def scrape_vehicles():
                     local_img_path = download_image(img_url, img_name)
                     
                     vehicle["image_url"] = img_url
-                    vehicle["local_image"] = local_img_path if local_img_path else ""
+                    # Convertimos la ruta a estilo web (forward slashes)
+                    if local_img_path:
+                        vehicle["local_image"] = local_img_path.replace(os.sep, '/')
+                    else:
+                        vehicle["local_image"] = ""
                     
                     vehicles_data.append(vehicle)
                     print(f"  [√] Guardado: {vehicle['display_name']}")

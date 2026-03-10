@@ -14,7 +14,7 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/Camry/4T1DAACK3SU555467/",
         "display_name": "USADO 2025\nTOYOTA CAMRY SE",
         "image_url": "https://vehicle-photos-published.vauto.com/ea/60/8b/88-70cc-46c6-94c3-c4317dfc2b7e/image-1.jpg",
-        "local_image": "images\\4T1DAACK3SU555467.jpg"
+        "local_image": "images/4T1DAACK3SU555467.jpg"
     },
     {
         "vin": "4T1DAACKXSU558737",
@@ -31,7 +31,7 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/Camry/4T1DAACKXSU558737/",
         "display_name": "USADO 2025\nTOYOTA CAMRY LE",
         "image_url": "https://vehicle-photos-published.vauto.com/58/f4/e5/f6-1797-4022-ba91-7dc67b5969df/image-1.jpg",
-        "local_image": "images\\4T1DAACKXSU558737.jpg"
+        "local_image": "images/4T1DAACKXSU558737.jpg"
     },
     {
         "vin": "3TYLB5JN0RT041533",
@@ -48,7 +48,7 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2024/Toyota/Tacoma/3TYLB5JN0RT041533/",
         "display_name": "USADO 2024\nTOYOTA TACOMA SR5 DOBLE CABINA 5' CAMA",
         "image_url": "https://vehicle-photos-published.vauto.com/04/2d/f3/c7-f17f-4b18-b0ee-d9066dec4860/image-1.jpg",
-        "local_image": "images\\3TYLB5JN0RT041533.jpg"
+        "local_image": "images/3TYLB5JN0RT041533.jpg"
     },
     {
         "vin": "3TMKB5FN3RM021812",
@@ -65,7 +65,7 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2024/Toyota/Tacoma/3TMKB5FN3RM021812/",
         "display_name": "USADO 2024\nTOYOTA TACOMA SR5 DOBLE CABINA 5' CAMA",
         "image_url": "https://vehicle-photos-published.vauto.com/d2/a4/73/6b-68f6-4edd-8ab8-bcd10dbcae71/image-1.jpg",
-        "local_image": "images\\3TMKB5FN3RM021812.jpg"
+        "local_image": "images/3TMKB5FN3RM021812.jpg"
     },
     {
         "vin": "3TYJBAFN5RT015275",
@@ -422,7 +422,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2023-toyota-corolla-se-fwd-sd-5yfs4mce8pp157061/",
         "display_name": "USED 2023 TOYOTA COROLLA",
         "image_url": "https://vehicle-images.carscommerce.inc/1fbf-110006962/5YFS4MCE8PP157061/thumbnails/large/a69d6d7ef4190adeb875437d24c0ebdd.jpg",
-        "local_image": "images\\5YFS4MCE8PP157061.jpg"
+        "local_image": "images/5YFS4MCE8PP157061.jpg"
     },
     {
         "vin": "1HGCY1F31PA055348",
@@ -439,7 +439,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2023-honda-accord-sedan-1-5t-ex-fwd-sd-1hgcy1f31pa055348/",
         "display_name": "USED 2023 HONDA ACCORD SEDAN",
         "image_url": "https://vehicle-images.carscommerce.inc/298a-110006962/1HGCY1F31PA055348/thumbnails/large/826bb7f35a1f110a03b1f020bb4ccc05.jpg",
-        "local_image": "images\\1HGCY1F31PA055348.jpg"
+        "local_image": "images/1HGCY1F31PA055348.jpg"
     },
     {
         "vin": "5N1AN0NU9EN813473",
@@ -456,7 +456,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2014-nissan-xterra-s-rwd-wg-5n1an0nu9en813473/",
         "display_name": "USED 2014 NISSAN XTERRA",
         "image_url": "https://vehicle-images.carscommerce.inc/aa99-110006962/5N1AN0NU9EN813473/thumbnails/large/134ee988d1271ce47d6c559579120380.jpg",
-        "local_image": "images\\5N1AN0NU9EN813473.jpg"
+        "local_image": "images/5N1AN0NU9EN813473.jpg"
     },
     {
         "vin": "5FNRL5H44EB073528",
@@ -473,7 +473,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2014-honda-odyssey-ex-fwd-4d-passenger-van-5fnrl5h44eb073528/",
         "display_name": "USED 2014 HONDA ODYSSEY",
         "image_url": "https://vehicle-images.carscommerce.inc/a6d5-110006962/5FNRL5H44EB073528/thumbnails/large/85ac901bdc31162426adc2f28bdcf841.jpg",
-        "local_image": "images\\5FNRL5H44EB073528.jpg"
+        "local_image": "images/5FNRL5H44EB073528.jpg"
     },
     {
         "vin": "2T3WFREV3GW236035",
@@ -490,7 +490,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2016-toyota-rav4-xle-fwd-4d-sport-utility-2t3wfrev3gw236035/",
         "display_name": "USED 2016 TOYOTA RAV4",
         "image_url": "https://vehicle-images.carscommerce.inc/f5c2-110006962/2T3WFREV3GW236035/thumbnails/large/241062baa2543a4674bd9685d05f1bee.jpg",
-        "local_image": "images\\2T3WFREV3GW236035.jpg"
+        "local_image": "images/2T3WFREV3GW236035.jpg"
     },
     {
         "vin": "2FMPK4J90LBA96286",
@@ -507,7 +507,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2020-ford-edge-sel-awd-4d-sport-utility-2fmpk4j90lba96286/",
         "display_name": "USED 2020 FORD EDGE",
         "image_url": "https://vehicle-images.carscommerce.inc/66c1-110006962/2FMPK4J90LBA96286/thumbnails/large/4042dd8527fafe3851d0f06c91c036b0.jpg",
-        "local_image": "images\\2FMPK4J90LBA96286.jpg"
+        "local_image": "images/2FMPK4J90LBA96286.jpg"
     },
     {
         "vin": "KNDJ63AU1L7725267",
@@ -524,7 +524,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2020-kia-motors-soul-gt-line-fwd-wg-kndj63au1l7725267/",
         "display_name": "USED 2020 KIA MOTORS SOUL",
         "image_url": "https://vehicle-images.carscommerce.inc/c13d-110006962/KNDJ63AU1L7725267/thumbnails/large/88cd45b44eb6500d860de2e0b3656fc1.jpg",
-        "local_image": "images\\KNDJ63AU1L7725267.jpg"
+        "local_image": "images/KNDJ63AU1L7725267.jpg"
     },
     {
         "vin": "NMTKHMBX8JR042304",
@@ -541,7 +541,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2018-toyota-ch-r-xle-premium-fwd-sd-nmtkhmbx8jr042304/",
         "display_name": "USED 2018 TOYOTA CH-R",
         "image_url": "https://vehicle-images.carscommerce.inc/cf4c-110006962/NMTKHMBX8JR042304/thumbnails/large/23e8fe586f9b4792aa3ef4a0dd3c0168.jpg",
-        "local_image": "images\\NMTKHMBX8JR042304.jpg"
+        "local_image": "images/NMTKHMBX8JR042304.jpg"
     },
     {
         "vin": "3GNAXHEV2MS150474",
@@ -558,7 +558,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2021-chevy-equinox-ls-fwd-uv-3gnaxhev2ms150474/",
         "display_name": "USED 2021 CHEVY EQUINOX",
         "image_url": "https://vehicle-images.carscommerce.inc/95fb-110006962/3GNAXHEV2MS150474/thumbnails/large/29ae83531525c56a18d5de0be114d9c1.jpg",
-        "local_image": "images\\3GNAXHEV2MS150474.jpg"
+        "local_image": "images/3GNAXHEV2MS150474.jpg"
     },
     {
         "vin": "5NPLM4AG6PH113582",
@@ -575,7 +575,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2023-hyundai-elantra-sel-fwd-sd-5nplm4ag6ph113582/",
         "display_name": "USED 2023 HYUNDAI ELANTRA",
         "image_url": "https://vehicle-images.carscommerce.inc/658f-110006962/5NPLM4AG6PH113582/thumbnails/large/eaa8900ba88edb0695dfdebae548c627.jpg",
-        "local_image": "images\\5NPLM4AG6PH113582.jpg"
+        "local_image": "images/5NPLM4AG6PH113582.jpg"
     },
     {
         "vin": "3VV2B7AX6NM024882",
@@ -592,7 +592,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2022-volkswagen-tiguan-2-0t-se-awd-uv-3vv2b7ax6nm024882/",
         "display_name": "USED 2022 VOLKSWAGEN TIGUAN",
         "image_url": "https://vehicle-images.carscommerce.inc/2122-110006962/3VV2B7AX6NM024882/thumbnails/large/8b612eeb654bc48756dc659dacf898ac.jpg",
-        "local_image": "images\\3VV2B7AX6NM024882.jpg"
+        "local_image": "images/3VV2B7AX6NM024882.jpg"
     },
     {
         "vin": "4T1G11AK7RU260866",
@@ -609,7 +609,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-toyota-camry-fwd-sd-4t1g11ak7ru260866/",
         "display_name": "USED 2024 TOYOTA CAMRY",
         "image_url": "https://vehicle-images.carscommerce.inc/4819-110006962/4T1G11AK7RU260866/thumbnails/large/e8c2c0d2181cb395852d9e5f77059f73.jpg",
-        "local_image": "images\\4T1G11AK7RU260866.jpg"
+        "local_image": "images/4T1G11AK7RU260866.jpg"
     },
     {
         "vin": "19XFL2H83NE008910",
@@ -626,7 +626,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2022-honda-civic-hatchback-sport-fwd-hb-19xfl2h83ne008910/",
         "display_name": "USED 2022 HONDA CIVIC HATCHBACK",
         "image_url": "https://vehicle-images.carscommerce.inc/b4d4-110006962/19XFL2H83NE008910/thumbnails/large/c15df58124e41bafcf77575ea2acf951.jpg",
-        "local_image": "images\\19XFL2H83NE008910.jpg"
+        "local_image": "images/19XFL2H83NE008910.jpg"
     },
     {
         "vin": "2HKRW1H57LH418977",
@@ -643,7 +643,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2020-honda-cr-v-ex-fwd-ut-2hkrw1h57lh418977/",
         "display_name": "USED 2020 HONDA CR-V",
         "image_url": "https://vehicle-images.carscommerce.inc/6fc2-110006962/2HKRW1H57LH418977/thumbnails/large/bd2684439e8b2d22b39a8dc22873b1fd.jpg",
-        "local_image": "images\\2HKRW1H57LH418977.jpg"
+        "local_image": "images/2HKRW1H57LH418977.jpg"
     },
     {
         "vin": "2HGFE2F53RH520004",
@@ -660,7 +660,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-honda-civic-sedan-2-0l-4d-sport-fwd-sd-2hgfe2f53rh520004/",
         "display_name": "USED 2024 HONDA CIVIC SEDAN",
         "image_url": "https://vehicle-images.carscommerce.inc/f857-110006962/2HGFE2F53RH520004/thumbnails/large/3999cbaaff800af4739372519a2769c7.jpg",
-        "local_image": "images\\2HGFE2F53RH520004.jpg"
+        "local_image": "images/2HGFE2F53RH520004.jpg"
     },
     {
         "vin": "1C6HJTAG7ML536551",
@@ -677,7 +677,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2021-jeep-gladiator-willys-4wd-pu-1c6hjtag7ml536551/",
         "display_name": "USED 2021 JEEP GLADIATOR",
         "image_url": "https://vehicle-images.carscommerce.inc/5b0b-110006962/1C6HJTAG7ML536551/thumbnails/large/d537b383fb3f3c382b867f64c149b2c1.jpg",
-        "local_image": "images\\1C6HJTAG7ML536551.jpg"
+        "local_image": "images/1C6HJTAG7ML536551.jpg"
     },
     {
         "vin": "3GKALMEG6RL263350",
@@ -694,7 +694,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-gmc-terrain-sle-fwd-uv-3gkalmeg6rl263350/",
         "display_name": "USED 2024 GMC TERRAIN",
         "image_url": "https://vehicle-images.carscommerce.inc/2328-110006962/3GKALMEG6RL263350/thumbnails/large/4cb9b55fcfaabc3c2e31110f26852aa2.jpg",
-        "local_image": "images\\3GKALMEG6RL263350.jpg"
+        "local_image": "images/3GKALMEG6RL263350.jpg"
     },
     {
         "vin": "WAUAUDGY4NA088724",
@@ -711,7 +711,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2022-audi-a3-premium-fwd-sd-wauaudgy4na088724/",
         "display_name": "USED 2022 AUDI A3",
         "image_url": "https://vehicle-images.carscommerce.inc/ed21-110006962/WAUAUDGY4NA088724/thumbnails/large/d6506959bec613cb3cd3a2877d81f24a.jpg",
-        "local_image": "images\\WAUAUDGY4NA088724.jpg"
+        "local_image": "images/WAUAUDGY4NA088724.jpg"
     },
     {
         "vin": "3FMCR9B62RRF28690",
@@ -728,7 +728,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-ford-bronco-big-bend-4wd-mp-3fmcr9b62rrf28690/",
         "display_name": "USED 2024 FORD BRONCO",
         "image_url": "https://vehicle-images.carscommerce.inc/2dc6-110006962/3FMCR9B62RRF28690/thumbnails/large/1179c50fdafdd912ef6c1ec599db6c68.jpg",
-        "local_image": "images\\3FMCR9B62RRF28690.jpg"
+        "local_image": "images/3FMCR9B62RRF28690.jpg"
     },
     {
         "vin": "2LMPJ6K99MBL09111",
@@ -745,7 +745,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2021-lincoln-aviator-reserve-fwd-mp-2lmpj6k99mbl09111/",
         "display_name": "USED 2021 LINCOLN AVIATOR",
         "image_url": "https://vehicle-images.carscommerce.inc/6d19-110006962/2LMPJ6K99MBL09111/thumbnails/large/b7e33289261435787c1ccc997ca6ae0f.jpg",
-        "local_image": "images\\2LMPJ6K99MBL09111.jpg"
+        "local_image": "images/2LMPJ6K99MBL09111.jpg"
     },
     {
         "vin": "19UUB5F44NA004316",
@@ -762,7 +762,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2022-acura-acura-technology-package-fwd-sd-19uub5f44na004316/",
         "display_name": "USED 2022 ACURA ACURA",
         "image_url": "https://vehicle-images.carscommerce.inc/1ea1-110006962/19UUB5F44NA004316/thumbnails/large/a339bd4db294badb314400f3eb1ac3e7.jpg",
-        "local_image": "images\\19UUB5F44NA004316.jpg"
+        "local_image": "images/19UUB5F44NA004316.jpg"
     },
     {
         "vin": "W1N4M4HB9MW111399",
@@ -779,7 +779,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2021-mercedes-benz-glb250-glb-250-4matic%c2%ae-uv-w1n4m4hb9mw111399/",
         "display_name": "USED 2021 MERCEDES-BENZ GLB250",
         "image_url": "https://vehicle-images.carscommerce.inc/7c77-110006962/W1N4M4HB9MW111399/thumbnails/large/23ad0e459dd102f3d2da1b6c5aaf1a1e.jpg",
-        "local_image": "images\\W1N4M4HB9MW111399.jpg"
+        "local_image": "images/W1N4M4HB9MW111399.jpg"
     },
     {
         "vin": "3GKALMEG9TL113028",
@@ -796,7 +796,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2026-gmc-terrain-elevation-fwd-uv-3gkalmeg9tl113028/",
         "display_name": "USED 2026 GMC TERRAIN",
         "image_url": "https://vehicle-images.carscommerce.inc/7099-110006962/3GKALMEG9TL113028/thumbnails/large/a48d5dd1ce433e68a38f8b9a5266e738.jpg",
-        "local_image": "images\\3GKALMEG9TL113028.jpg"
+        "local_image": "images/3GKALMEG9TL113028.jpg"
     },
     {
         "vin": "7FARS3H44PE007205",
@@ -813,7 +813,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2023-honda-cr-v-ex-fwd-uv-7fars3h44pe007205/",
         "display_name": "USED 2023 HONDA CR-V",
         "image_url": "https://vehicle-images.carscommerce.inc/de3b-110006962/7FARS3H44PE007205/thumbnails/large/7322f7c346327836ee866481b1530ad7.jpg",
-        "local_image": "images\\7FARS3H44PE007205.jpg"
+        "local_image": "images/7FARS3H44PE007205.jpg"
     },
     {
         "vin": "5FNRL6H6XRB032981",
@@ -830,7 +830,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-honda-odyssey-ex-l-fwd-uv-5fnrl6h6xrb032981/",
         "display_name": "USED 2024 HONDA ODYSSEY",
         "image_url": "https://vehicle-images.carscommerce.inc/d4b9-110006962/5FNRL6H6XRB032981/thumbnails/large/9cc947ccfc5c8ed8b9da0da2ceaa946b.jpg",
-        "local_image": "images\\5FNRL6H6XRB032981.jpg"
+        "local_image": "images/5FNRL6H6XRB032981.jpg"
     },
     {
         "vin": "KNDNB5K34T6553241",
@@ -847,7 +847,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2026-kia-motors-carnival-lxs-fwd-wg-kndnb5k34t6553241/",
         "display_name": "USED 2026 KIA MOTORS CARNIVAL",
         "image_url": "https://vehicle-images.carscommerce.inc/6830-110006962/KNDNB5K34T6553241/thumbnails/large/bb49208fe853a8b91268d013d7f200e5.jpg",
-        "local_image": "images\\KNDNB5K34T6553241.jpg"
+        "local_image": "images/KNDNB5K34T6553241.jpg"
     },
     {
         "vin": "1FTFW3L55SKD39362",
@@ -864,7 +864,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2025-ford-f150-pu-xlt-4wd-pu-1ftfw3l55skd39362/",
         "display_name": "USED 2025 FORD F150 PU",
         "image_url": "https://vehicle-images.carscommerce.inc/b2b8-110006962/1FTFW3L55SKD39362/thumbnails/large/802cea4d5ad7b67395f7c64ad661be7f.jpg",
-        "local_image": "images\\1FTFW3L55SKD39362.jpg"
+        "local_image": "images/1FTFW3L55SKD39362.jpg"
     },
     {
         "vin": "5UX33DT07P9S55403",
@@ -881,7 +881,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2023-bmw-y-xdrive30i-awd-mp-5ux33dt07p9s55403/",
         "display_name": "USED 2023 BMW Y",
         "image_url": "https://vehicle-images.carscommerce.inc/3eee-110006962/5UX33DT07P9S55403/thumbnails/large/3865228df057725a4ccb02818a90a0e3.jpg",
-        "local_image": "images\\5UX33DT07P9S55403.jpg"
+        "local_image": "images/5UX33DT07P9S55403.jpg"
     },
     {
         "vin": "5UX23EU04R9W15908",
@@ -898,7 +898,7 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-bmw-x5-xdrive40i-awd-mp-5ux23eu04r9w15908/",
         "display_name": "USED 2024 BMW X5",
         "image_url": "https://vehicle-images.carscommerce.inc/2695-110006962/5UX23EU04R9W15908/thumbnails/large/7e1b2306359ee13189af6859be2aa5f7.jpg",
-        "local_image": "images\\5UX23EU04R9W15908.jpg"
+        "local_image": "images/5UX23EU04R9W15908.jpg"
     },
     {
         "vin": "5XYC44JA0SG003168",
@@ -915,6 +915,6 @@ const vehicleData = [
         "vdp_url": "https://www.hollywoodkia.com/inventory/new-2025-kia-ev6-gt-line-rwd-sport-utility-5xyc44ja0sg003168/",
         "display_name": "NEW 2025 KIA EV6",
         "image_url": "https://vehicle-images.carscommerce.inc/afec-110012109/5XYC44JA0SG003168/thumbnails/large/b1fa9e8ed7443064c0f7c34fdee2af97.jpg",
-        "local_image": "images\\5XYC44JA0SG003168.jpg"
+        "local_image": "images/5XYC44JA0SG003168.jpg"
     }
 ];
