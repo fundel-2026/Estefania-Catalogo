@@ -120,39 +120,75 @@
                 card.className = 'car-card';
                 card.style.animationDelay = `${index * 0.05}s`;
 
-                const imgSrc = car.local_image || car.image_url || 'https://via.placeholder.com/400x250?text=Premium+Vehicle';
+                // Main Image
+                const mainImgSrc = car.local_image ? car.local_image.replace(/\\/g, '/') : (car.image_url || 'https://via.placeholder.com/400x250?text=Premium+Vehicle');
+
+                // Gallery: if car.images exists, use them. Otherwise, just repeat main image or placeholder.
+                let galleryHtml = '';
+                if (car.images && car.images.length > 0) {
+                    car.images.forEach(img => {
+                        galleryHtml += `<img src="${img.replace(/\\/g, '/')}" class="gallery-img" alt="Vista" onerror="this.style.display='none'">`;
+                    });
+                } else {
+                    // Pre-fill with main image if gallery is empty
+                    galleryHtml = `<img src="${mainImgSrc}" class="gallery-img" alt="Main">`;
+                }
+
                 const formattedPrice = Number(car.price) > 0 ? `$${Number(car.price).toLocaleString()}` : 'Contactar';
 
                 card.innerHTML = `
                     <div class="badge">${car.body_style || 'Certified'}</div>
                     <div class="img-container">
-                        <img src="${imgSrc}" alt="${car.display_name}" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Loading...'">
+                        <img src="${mainImgSrc}" alt="${car.display_name}" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Loading...'">
                     </div>
+                    
+                    <div class="gallery-container">
+                        ${galleryHtml}
+                    </div>
+
                     <div class="content">
                         <div class="car-header">
                             <div class="car-year">${car.year} | ${car.make}</div>
                             <h2 class="car-name">${car.model}</h2>
+                            <div class="car-trim">${car.trim || ''}</div>
                         </div>
+
                         <div class="specs">
                             <div class="spec-item">
-                                <span class="spec-icon">🛣️</span> ${car.mileage || 'N/A'} mi
+                                <span class="spec-label">KM / Miles</span>
+                                <span class="spec-value">${car.mileage || car.miles || 'N/A'} mi</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-icon">⚙️</span> ${car.transmission || 'Auto'}
+                                <span class="spec-label">Transmission</span>
+                                <span class="spec-value">${car.transmission || 'Auto'}</span>
                             </div>
                             <div class="spec-item">
-                                <span class="spec-icon">🎨</span> ${car.ext_color || 'N/A'}
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-icon">🆔</span> ${car.vin ? car.vin.slice(-6) : 'N/A'}
+                                <span class="spec-label">Fuel Type</span>
+                                <span class="spec-value">${car.fuel || car.engine || 'Gasoline'}</span>
                             </div>
                         </div>
+
+                        <div class="details-grid">
+                            <div class="detail-row">
+                                <span class="detail-label">Exterior</span>
+                                <span class="detail-value">${car.exterior || car.ext_color || 'N/A'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Interior</span>
+                                <span class="detail-value">${car.interior || car.int_color || 'N/A'}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">${car.location || 'Miami, FL'}</span>
+                            </div>
+                        </div>
+
+                        ${car.description ? `<div class="description">${car.description.substring(0, 150)}${car.description.length > 150 ? '...' : ''}</div>` : ''}
+
                         <div class="price-container">
                             <div class="price">
                                 ${formattedPrice}
-                                <span>+ tax</span>
                             </div>
-                            <a href="${car.vdp_url}" target="_blank" class="btn-view">Ver Detalles</a>
                         </div>
                     </div>
                 `;
