@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Premium Vehicle Inventory | multi-brand</title>
+    <title>Drive Miami Today | Your Perfect Drive Starts Here</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -12,77 +12,165 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Best Motors Premium</h1>
-            <p>Descubre nuestra colección exclusiva de vehículos seleccionados con los más altos estándares de calidad.
-            </p>
-        </header>
+    <nav>
+        <div class="logo">DRIVE MIAMI TODAY</div>
+        <a href="tel:+13050000000" class="contact-btn">📞 CONTACT US</a>
+    </nav>
 
-        <div class="brand-filter-wrapper">
-            <div class="brand-filter" id="brandFilter">
-                <!-- Los botones de marcas se cargarán aquí -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <img src="hero-bg.png" class="hero-img" alt="Luxury Car">
+        <div class="hero-content">
+            <h1>Your perfect drive starts here</h1>
+            <div class="hero-btns">
+                <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
+                <a href="#" class="btn btn-glass">Schedule Test Drive</a>
             </div>
         </div>
+    </section>
 
-        <div class="controls">
-            <div class="search-box-container">
+    <div class="main-container" id="inventory">
+        <div class="search-container">
+            <div class="search-input-wrapper">
                 <span class="search-icon">🔍</span>
-                <input type="text" id="searchInput" class="search-box" placeholder="Busca tu próximo vehículo...">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search by make, model, or year...">
             </div>
-            <div class="filter-stats">
-                Mostrando <span id="carCount">0</span> vehículos
+            <div class="brand-filter" id="brandFilter">
+                <!-- Brands will be loaded here -->
             </div>
         </div>
 
-        <div class="inventory-grid" id="inventoryGrid">
-            <!-- Los vehículos se cargarán aquí dinámicamente -->
+    <div class="inventory-grid" id="inventoryGrid">
+            <!-- Vehicles will be loaded here -->
         </div>
-
-        <footer>
-            <p>&copy; 2026 Best Motors Premium Dashboard. Diseñado para la excelencia.</p>
-        </footer>
     </div>
 
-    <!-- Cargamos los datos desde el archivo JS -->
+    <div class="modal-overlay" id="vehicleModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            
+            <div class="modal-gallery">
+                <div class="main-img-view">
+                    <button class="nav-arrow nav-prev" onclick="changeImage(-1)">❮</button>
+                    <img id="modalMainImg" src="" alt="Vehicle">
+                    <button class="nav-arrow nav-next" onclick="changeImage(1)">❯</button>
+                    <div class="img-counter" id="imgCounter">1 / 1</div>
+                </div>
+                <div class="thumbnail-strip" id="thumbStrip">
+                    <!-- Thumbs here -->
+                </div>
+            </div>
+
+            <div class="modal-info">
+                <div class="modal-header-top">
+                    <div class="modal-year-badge" id="modalYearBadge">2025</div>
+                    <span class="modal-condition-badge" id="modalCondition">CERTIFIED PRE-OWNED</span>
+                </div>
+                <h1 class="modal-title" id="modalTitle">Vehicle Name</h1>
+
+                <div class="modal-specs-grid">
+                    <div class="modal-spec-card">
+                        <div class="modal-spec-icon">🧭</div>
+                        <div>
+                            <span class="modal-spec-label">Mileage</span>
+                            <span class="modal-spec-val" id="specMileage">0 mi</span>
+                        </div>
+                    </div>
+                    <div class="modal-spec-card">
+                        <div class="modal-spec-icon">⚙️</div>
+                        <div>
+                            <span class="modal-spec-label">Transmission</span>
+                            <span class="modal-spec-val" id="specTrans">Automatic</span>
+                        </div>
+                    </div>
+                    <div class="modal-spec-card">
+                        <div class="modal-spec-icon">⛽</div>
+                        <div>
+                            <span class="modal-spec-label">Fuel Type</span>
+                            <span class="modal-spec-val" id="specFuel">Gasoline</span>
+                        </div>
+                    </div>
+                    <div class="modal-spec-card">
+                        <div class="modal-spec-icon">📅</div>
+                        <div>
+                            <span class="modal-spec-label">Model Year</span>
+                            <span class="modal-spec-val" id="specYear">2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="benefits-section">
+                    <h3 class="benefits-title">PREMIER AUTO BENEFITS</h3>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div> 150-Point Comprehensive Inspection
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div> Free CARFAX® Vehicle History Report
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-check">✓</div> Certified and Road-Ready Guarantee
+                    </div>
+                </div>
+
+                <div class="modal-action-area">
+                    <div class="modal-price-display" id="modalPrice">Contact Us</div>
+                    <button class="modal-cta">Schedule Test Drive</button>
+                    <p class="modal-footer-msg">Experience premium comfort today.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Drive Miami Today. All rights reserved. Designed for Excellence.</p>
+    </footer>
+
+    <!-- Vehicle Data -->
     <script src="data/vehicles.js"></script>
 
     <script>
         const inventoryGrid = document.getElementById('inventoryGrid');
         const searchInput = document.getElementById('searchInput');
-        const carCount = document.getElementById('carCount');
         const brandFilter = document.getElementById('brandFilter');
+        
+        // Modal elements
+        const modal = document.getElementById('vehicleModal');
+        const modalMainImg = document.getElementById('modalMainImg');
+        const thumbStrip = document.getElementById('thumbStrip');
+        const imgCounter = document.getElementById('imgCounter');
 
         let allVehicles = [];
         let currentFilter = 'All';
         let searchTerm = '';
+        
+        // Gallery state
+        let currentVehicleImages = [];
+        let currentImageIndex = 0;
 
-        // Función para cargar los datos e inicializar
-        function initInventory() {
+        function init() {
             if (typeof vehicleData !== 'undefined') {
                 allVehicles = vehicleData;
                 createBrandFilters();
                 renderVehicles();
             } else {
-                showError();
+                inventoryGrid.innerHTML = `
+                    <div style="grid-column: 1/-1; text-align: center; padding: 4rem;">
+                        <h2>⚠️ Data Loading Error</h2>
+                        <p>Could not load vehicle inventory. Please check data/vehicles.js</p>
+                    </div>`;
             }
         }
 
-        // Crear botones de marcas dinámicamente
         function createBrandFilters() {
             const brands = ['All', ...new Set(allVehicles.map(car => car.make))].sort();
-
             brandFilter.innerHTML = '';
+            
             brands.forEach(brand => {
                 if (!brand) return;
                 const btn = document.createElement('button');
                 btn.className = `brand-btn ${brand === currentFilter ? 'active' : ''}`;
-
-                // Normalizar nombre para mostrar
-                const displayName = brand === 'All' ? '✨ Todas las marcas' :
-                    brand.charAt(0).toUpperCase() + brand.slice(1).toLowerCase();
-
-                btn.innerHTML = displayName;
+                btn.textContent = brand === 'All' ? '✨ All Brands' : brand;
+                
                 btn.onclick = () => {
                     document.querySelectorAll('.brand-btn').forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
@@ -93,102 +181,46 @@
             });
         }
 
-        // Función unificada de renderizado y filtrado
         function renderVehicles() {
             const filtered = allVehicles.filter(car => {
                 const matchesBrand = currentFilter === 'All' || car.make === currentFilter;
-                const matchesSearch =
-                    car.display_name?.toLowerCase().includes(searchTerm) ||
-                    car.model?.toLowerCase().includes(searchTerm) ||
-                    car.vin?.toLowerCase().includes(searchTerm) ||
-                    car.make?.toLowerCase().includes(searchTerm);
+                const stringToSearch = `${car.make} ${car.model} ${car.year} ${car.trim}`.toLowerCase();
+                const matchesSearch = stringToSearch.includes(searchTerm);
                 return matchesBrand && matchesSearch;
             });
 
-            // Ordenar: Con imágenes primero
             filtered.sort((a, b) => {
                 const hasA = (a.local_image || a.image_url) ? 1 : 0;
                 const hasB = (b.local_image || b.image_url) ? 1 : 0;
-                return hasB - hasA; // Si B tiene imagen y A no, B va primero
+                return hasB - hasA;
             });
 
             inventoryGrid.innerHTML = '';
-            carCount.textContent = filtered.length;
 
             filtered.forEach((car, index) => {
                 const card = document.createElement('div');
                 card.className = 'car-card';
                 card.style.animationDelay = `${index * 0.05}s`;
 
-                // Main Image
-                const mainImgSrc = car.local_image ? car.local_image.replace(/\\/g, '/') : (car.image_url || 'https://via.placeholder.com/400x250?text=Premium+Vehicle');
-
-                // Gallery: if car.images exists, use them. Otherwise, just repeat main image or placeholder.
-                let galleryHtml = '';
-                if (car.images && car.images.length > 0) {
-                    car.images.forEach(img => {
-                        galleryHtml += `<img src="${img.replace(/\\/g, '/')}" class="gallery-img" alt="Vista" onerror="this.style.display='none'">`;
-                    });
-                } else {
-                    // Pre-fill with main image if gallery is empty
-                    galleryHtml = `<img src="${mainImgSrc}" class="gallery-img" alt="Main">`;
-                }
-
-                const formattedPrice = Number(car.price) > 0 ? `$${Number(car.price).toLocaleString()}` : 'Contactar';
+                const imgSrc = car.local_image ? car.local_image.replace(/\\/g, '/') : (car.image_url || 'https://via.placeholder.com/600x400?text=No+Image');
+                const price = Number(car.price) > 0 ? `$${Number(car.price).toLocaleString()}` : 'Call for Price';
 
                 card.innerHTML = `
-                    <div class="badge">${car.body_style || 'Certified'}</div>
                     <div class="img-container">
-                        <img src="${mainImgSrc}" alt="${car.display_name}" onerror="this.src='https://via.placeholder.com/400x250?text=Image+Loading...'">
+                        <span class="badge-new">${car.condition || 'NEW'}</span>
+                        <img src="${imgSrc}" alt="${car.make} ${car.model}" loading="lazy" onerror="this.src='https://via.placeholder.com/600x400?text=Image+Not+Found'">
                     </div>
-                    
-                    <div class="gallery-container">
-                        ${galleryHtml}
-                    </div>
-
                     <div class="content">
-                        <div class="car-header">
-                            <div class="car-year">${car.year} | ${car.make}</div>
-                            <h2 class="car-name">${car.model}</h2>
-                            <div class="car-trim">${car.trim || ''}</div>
+                        <div class="car-year">${car.year} ${car.make}</div>
+                        <h2 class="car-name">${car.model}</h2>
+                        <div class="specs-row">
+                            <span class="spec-pill">🏎️ ${car.mileage || car.miles || '0'} mi</span>
+                            <span class="spec-pill">⛽ ${car.fuel || car.engine || 'Gas'}</span>
+                            <span class="spec-pill">⚙️ ${car.transmission || 'Auto'}</span>
                         </div>
-
-                        <div class="specs">
-                            <div class="spec-item">
-                                <span class="spec-label">KM / Miles</span>
-                                <span class="spec-value">${car.mileage || car.miles || 'N/A'} mi</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Transmission</span>
-                                <span class="spec-value">${car.transmission || 'Auto'}</span>
-                            </div>
-                            <div class="spec-item">
-                                <span class="spec-label">Fuel Type</span>
-                                <span class="spec-value">${car.fuel || car.engine || 'Gasoline'}</span>
-                            </div>
-                        </div>
-
-                        <div class="details-grid">
-                            <div class="detail-row">
-                                <span class="detail-label">Exterior</span>
-                                <span class="detail-value">${car.exterior || car.ext_color || 'N/A'}</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="detail-label">Interior</span>
-                                <span class="detail-value">${car.interior || car.int_color || 'N/A'}</span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="detail-label">Location</span>
-                                <span class="detail-value">${car.location || 'Miami, FL'}</span>
-                            </div>
-                        </div>
-
-                        ${car.description ? `<div class="description">${car.description.substring(0, 150)}${car.description.length > 150 ? '...' : ''}</div>` : ''}
-
-                        <div class="price-container">
-                            <div class="price">
-                                ${formattedPrice}
-                            </div>
+                        <div class="price-row">
+                            <div class="price-val">${price}</div>
+                            <button class="view-btn" onclick='openVehicleDetails(${JSON.stringify(car).replace(/'/g, "&apos;")})'>View Details</button>
                         </div>
                     </div>
                 `;
@@ -196,24 +228,81 @@
             });
         }
 
-        // Buscador
+        // Modal Functions
+        window.openVehicleDetails = function(car) {
+            document.getElementById('modalTitle').textContent = `${car.make} ${car.model}`;
+            document.getElementById('modalYearBadge').textContent = car.year;
+            document.getElementById('specMileage').textContent = `${car.mileage || car.miles || '0'} mi`;
+            document.getElementById('specTrans').textContent = car.transmission || 'Automatic';
+            document.getElementById('specFuel').textContent = car.fuel || car.engine || 'Gasoline';
+            document.getElementById('specYear').textContent = car.year;
+            document.getElementById('modalCondition').textContent = car.condition || 'CERTIFIED PRE-OWNED';
+            
+            const priceVal = Number(car.price) > 0 ? `$${Number(car.price).toLocaleString()}` : 'Contact Us';
+            document.getElementById('modalPrice').textContent = priceVal;
+
+            // Gallery Setup
+            currentVehicleImages = [];
+            if (car.images && car.images.length > 0) {
+                currentVehicleImages = car.images.map(img => img.replace(/\\/g, '/'));
+            } else {
+                const mainImg = car.local_image ? car.local_image.replace(/\\/g, '/') : car.image_url;
+                if (mainImg) currentVehicleImages.push(mainImg);
+            }
+            
+            if (currentVehicleImages.length === 0) {
+                currentVehicleImages.push('https://via.placeholder.com/1200x800?text=No+Gallery+Images');
+            }
+
+            currentImageIndex = 0;
+            updateModalGallery();
+            
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        window.closeModal = function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.changeImage = function(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = currentVehicleImages.length - 1;
+            if (currentImageIndex >= currentVehicleImages.length) currentImageIndex = 0;
+            updateModalGallery();
+        }
+
+        function updateModalGallery() {
+            modalMainImg.src = currentVehicleImages[currentImageIndex];
+            imgCounter.textContent = `${currentImageIndex + 1} / ${currentVehicleImages.length}`;
+
+            // Build thumbnails
+            thumbStrip.innerHTML = '';
+            currentVehicleImages.forEach((img, idx) => {
+                const thumb = document.createElement('img');
+                thumb.src = img;
+                thumb.className = `thumb-item ${idx === currentImageIndex ? 'active' : ''}`;
+                thumb.onclick = () => {
+                    currentImageIndex = idx;
+                    updateModalGallery();
+                };
+                thumbStrip.appendChild(thumb);
+            });
+        }
+
+        // Close on backdrop click
+        modal.onclick = (e) => {
+            if (e.target === modal) closeModal();
+        }
+
         searchInput.addEventListener('input', (e) => {
             searchTerm = e.target.value.toLowerCase();
             renderVehicles();
         });
 
-        function showError() {
-            inventoryGrid.innerHTML = `
-                <div style="grid-column: 1/-1; text-align: center; padding: 60px; background: rgba(255,0,0,0.05); border-radius: 24px; border: 1px dashed rgba(255,0,0,0.2);">
-                    <h3 style="color: #ff4d4d;">⚠️ Error de Conexión</h3>
-                    <p>No pudimos cargar los datos del inventario.</p>
-                </div>`;
-        }
-
-        // Iniciar
-        initInventory();
+        init();
     </script>
-
 </body>
 
 </html>
