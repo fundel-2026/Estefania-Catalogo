@@ -65,54 +65,67 @@ def scrape_vdp(driver, vdp_url):
         driver.get(vdp_url)
         time.sleep(3)
         
-        # 1. Gallery Images
-        # Most of these sites use Swiper
-        img_elements = driver.find_elements(By.CSS_SELECTOR, ".swiper-slide:not(.swiper-slide-duplicate) img")
-        if not img_elements:
-            # Fallback for other galleries
-            img_elements = driver.find_elements(By.CSS_SELECTOR, ".vdp-gallery img, .gallery-item img")
-            
-        img_urls = []
-        for img in img_elements:
-            src = img.get_attribute("src") or img.get_attribute("data-src")
-            if src and src not in img_urls and "placeholder" not in src.lower():
-                img_urls.append(src)
+        # Try DDC dataLayer (Dealer.com sites like Rick Case Honda)
+        try:
+            ddc_vehicles = driver.execute_script("return DDC.dataLayer.vehicles;")
+            if ddc_vehicles and len(ddc_vehicles) > 0:
+                veh = ddc_vehicles[0]
+                data["trim"] = veh.get("trim", "")
+                data["transmission"] = veh.get("transmission", "")
+                data["fuel"] = veh.get("fuelType", "") or veh.get("engine", "")
+                data["exterior"] = veh.get("exteriorColor", "")
+                data["interior"] = veh.get("interiorColor", "")
+                
+                if veh.get("images"):
+                    for img in veh["images"]:
+                        if img.get("uri"):
+                            data["all_images"].append(img["uri"].replace("\\", ""))
+        except: pass
         
-        data["all_images"] = img_urls[:20] # Limit to 20 for sanity
-        print(f"      Encontradas {len(img_urls)} imágenes.")
-
-        # 2. Metadata (Key-Value pairs)
-        # Braman style
-        items = driver.find_elements(By.CLASS_NAME, "vdp-details__sub-list-item")
-        for item in items:
-            try:
-                label = item.find_element(By.CLASS_NAME, "vdp-details__sub-list-item--label").text.lower()
-                value = item.find_element(By.CLASS_NAME, "vdp-details__sub-list-item--value").text.strip()
-                if "trans" in label: data["transmission"] = value
-                if "ext" in label: data["exterior"] = value
-                if "int" in label: data["interior"] = value
-                if "fuel" in label or "motor" in label: data["fuel"] = value
-                if "trim" in label: data["trim"] = value
-            except: pass
+        if not data["all_images"]:
+            # 1. Gallery Images Fallback
+            img_elements = driver.find_elements(By.CSS_SELECTOR, ".swiper-slide:not(.swiper-slide-duplicate) img")
+            if not img_elements:
+                img_elements = driver.find_elements(By.CSS_SELECTOR, ".vdp-gallery img, .gallery-item img")
+                
+            for img in img_elements:
+                src = img.get_attribute("src") or img.get_attribute("data-src")
+                if src and src not in data["all_images"] and "placeholder" not in src.lower():
+                    data["all_images"].append(src)
             
-        # Toyota style (Spanish labels)
+        data["all_images"] = data["all_images"][:20] 
+
         if not data["transmission"]:
-            summaries = driver.find_elements(By.CSS_SELECTOR, "li, div.detail-item")
-            for item in summaries:
-                text = item.text
-                if ":" in text:
-                    label, value = text.split(":", 1)
-                    label = label.lower()
-                    if "transmisión" in label: data["transmission"] = value.strip()
-                    if "exterior" in label: data["exterior"] = value.strip()
-                    if "interior" in label: data["interior"] = value.strip()
-                    if "motor" in label or "combustible" in label: data["fuel"] = value.strip()
+            # 2. Metadata (Key-Value pairs)
+            items = driver.find_elements(By.CLASS_NAME, "vdp-details__sub-list-item")
+            for item in items:
+                try:
+                    label = item.find_element(By.CLASS_NAME, "vdp-details__sub-list-item--label").text.lower()
+                    value = item.find_element(By.CLASS_NAME, "vdp-details__sub-list-item--value").text.strip()
+                    if "trans" in label: data["transmission"] = value
+                    if "ext" in label: data["exterior"] = value
+                    if "int" in label: data["interior"] = value
+                    if "fuel" in label or "motor" in label: data["fuel"] = value
+                    if "trim" in label: data["trim"] = value
+                except: pass
+                
+            # Toyota style
+            if not data["transmission"]:
+                summaries = driver.find_elements(By.CSS_SELECTOR, "li, div.detail-item")
+                for item in summaries:
+                    text = item.text
+                    if ":" in text:
+                        label, value = text.split(":", 1)
+                        label = label.lower()
+                        if "transmisión" in label: data["transmission"] = value.strip()
+                        if "exterior" in label: data["exterior"] = value.strip()
+                        if "interior" in label: data["interior"] = value.strip()
+                        if "motor" in label or "combustible" in label: data["fuel"] = value.strip()
 
         # 3. Trim from Title
         try:
             title = driver.find_element(By.CSS_SELECTOR, "h1, .page-title").text
             if not data["trim"]:
-                # Trim is often the last word or after the model
                 parts = title.split()
                 if len(parts) > 3:
                     data["trim"] = " ".join(parts[3:])
@@ -123,7 +136,6 @@ def scrape_vdp(driver, vdp_url):
             desc_el = driver.find_element(By.CSS_SELECTOR, "#vehicle-description .description, .vdp-description, [itemprop='description']")
             data["description"] = desc_el.text.strip()
         except:
-            # Toyota style description search by text
             try:
                 sections = driver.find_elements(By.XPATH, "//*[contains(text(), 'Descripción') or contains(text(), 'Description')]/following-sibling::div")
                 if sections:
@@ -137,6 +149,7 @@ def scrape_vdp(driver, vdp_url):
         except:
             if "braman" in vdp_url: data["location"] = "Miami, FL"
             elif "toyotaofhollywood" in vdp_url: data["location"] = "Hollywood, FL"
+            elif "rickcasehonda" in vdp_url: data["location"] = "Davie, FL"
 
     except Exception as e:
         print(f"      Error scrapeando VDP: {e}")
