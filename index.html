@@ -155,19 +155,20 @@
     </div>
 
     <div class="booking-modal-overlay" id="quizModal">
-        <div class="booking-modal-content" style="max-width: 800px;">
+        <div class="booking-modal-content quiz-specific-modal">
             <button class="modal-close" onclick="closeQuizModal()">✕</button>
-            <div class="booking-iframe-container" style="display: block;">
-                <iframe src="https://api.leadconnectorhq.com/widget/quiz/PiDdXyoWYtpKBOykdIwP" allowfullscreen style="width: 100%; height: 100%; border: none;"></iframe>
+            <div class="booking-iframe-container quiz-container-visible">
+                <iframe src="https://api.leadconnectorhq.com/widget/quiz/PiDdXyoWYtpKBOykdIwP" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
     <section class="pre-qualify-section">
         <div class="pre-qualify-content">
-            <h2>Get Pre-Approved in Seconds</h2>
-            <p>Skip the paperwork and see your options instantly. No credit hit to check.</p>
-            <button class="btn btn-white" onclick="openQuizModal()">Check My Eligibility</button>
+            <div class="pre-qualify-badge">VIP ACCESSS</div>
+            <h2>Get Pre-Approved <span>In Seconds</span></h2>
+            <p>Skip the paperwork and see your options instantly without affecting your credit score.</p>
+            <button class="btn-premium" onclick="openQuizModal()">Check My Eligibility Now</button>
         </div>
     </section>
 
