@@ -115,6 +115,7 @@
                 <div class="modal-action-area">
                     <div class="modal-price-display" id="modalPrice">Contact Us</div>
                     <button class="modal-cta" onclick="openBookingModal()">Schedule Test Drive</button>
+                    <button class="modal-cta-secondary" onclick="openQuizModal()">Check Eligibility</button>
                     <p class="modal-footer-msg">Experience premium comfort today.</p>
                 </div>
             </div>
@@ -152,6 +153,27 @@
             </div>
         </div>
     </div>
+
+    <div class="booking-modal-overlay" id="quizModal">
+        <div class="booking-modal-content" style="max-width: 800px;">
+            <button class="modal-close" onclick="closeQuizModal()">✕</button>
+            <div class="booking-iframe-container" style="display: block;">
+                <iframe src="https://api.leadconnectorhq.com/widget/quiz/PiDdXyoWYtpKBOykdIwP" allowfullscreen style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <section class="pre-qualify-section">
+        <div class="pre-qualify-content">
+            <h2>Get Pre-Approved in Seconds</h2>
+            <p>Skip the paperwork and see your options instantly. No credit hit to check.</p>
+            <button class="btn btn-white" onclick="openQuizModal()">Check My Eligibility</button>
+        </div>
+    </section>
+
+    <button class="floating-quiz-btn" onclick="openQuizModal()">
+        <span>📝</span> Get Pre-Approved
+    </button>
 
     <footer>
         <p>&copy; 2026 Drive Miami Today. All rights reserved. Designed for Excellence.</p>
@@ -365,6 +387,23 @@
         // Close on backdrop click for booking modal
         bookingModal.onclick = (e) => {
             if (e.target === bookingModal) closeBookingModal();
+        }
+
+        // Quiz Modal Functions
+        const quizModal = document.getElementById('quizModal');
+        window.openQuizModal = function() {
+            quizModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+        window.closeQuizModal = function() {
+            quizModal.style.display = 'none';
+            if ((!modal.style.display || modal.style.display === 'none') && 
+                (!bookingModal.style.display || bookingModal.style.display === 'none')) {
+                document.body.style.overflow = 'auto';
+            }
+        }
+        quizModal.onclick = (e) => {
+            if (e.target === quizModal) closeQuizModal();
         }
 
         searchInput.addEventListener('input', (e) => {
