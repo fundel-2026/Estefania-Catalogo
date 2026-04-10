@@ -24,7 +24,7 @@
             <h1>Your perfect drive starts here</h1>
             <div class="hero-btns">
                 <a href="#inventory" class="btn btn-primary">Browse Inventory</a>
-                <a href="#" class="btn btn-glass">Schedule Test Drive</a>
+                <button onclick="openBookingModal()" class="btn btn-glass">Schedule Test Drive</button>
             </div>
         </div>
     </section>
@@ -114,9 +114,41 @@
 
                 <div class="modal-action-area">
                     <div class="modal-price-display" id="modalPrice">Contact Us</div>
-                    <button class="modal-cta">Schedule Test Drive</button>
+                    <button class="modal-cta" onclick="openBookingModal()">Schedule Test Drive</button>
                     <p class="modal-footer-msg">Experience premium comfort today.</p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking-modal-overlay" id="bookingModal">
+        <div class="booking-modal-content">
+            <button class="modal-close" onclick="closeBookingModal()">✕</button>
+            <button class="back-btn" id="bookingBackBtn" onclick="goBackToLanguageSelection()">← Change Language</button>
+            
+            <div id="languageSelectionArea">
+                <div class="booking-header">
+                    <h2>Schedule Your Test Drive</h2>
+                    <p>Select your preferred language to continue</p>
+                </div>
+                
+                <div class="language-selector">
+                    <div class="lang-card" onclick="selectLanguage('es')">
+                        <div class="lang-flag">🇪🇸</div>
+                        <div class="lang-name">Español</div>
+                        <div class="lang-desc">Programar en español</div>
+                    </div>
+                    
+                    <div class="lang-card" onclick="selectLanguage('en')">
+                        <div class="lang-flag">🇺🇸</div>
+                        <div class="lang-name">English</div>
+                        <div class="lang-desc">Schedule in English</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-iframe-container" id="iframeContainer">
+                <iframe id="bookingIframe" src="" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -291,9 +323,48 @@
             });
         }
 
-        // Close on backdrop click
-        modal.onclick = (e) => {
-            if (e.target === modal) closeModal();
+        // Booking Modal Functions
+        const bookingModal = document.getElementById('bookingModal');
+        const langArea = document.getElementById('languageSelectionArea');
+        const iframeContainer = document.getElementById('iframeContainer');
+        const bookingIframe = document.getElementById('bookingIframe');
+        const backBtn = document.getElementById('bookingBackBtn');
+
+        window.openBookingModal = function() {
+            bookingModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+            goBackToLanguageSelection(); // Reset state
+        }
+
+        window.closeBookingModal = function() {
+            bookingModal.style.display = 'none';
+            if (!modal.style.display || modal.style.display === 'none') {
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        window.selectLanguage = function(lang) {
+            const urls = {
+                'es': 'https://api.leadconnectorhq.com/widget/booking/Ar5YegkSd2WoO50elQJe',
+                'en': 'https://api.leadconnectorhq.com/widget/booking/114fHWOv74PaH28FVlEs'
+            };
+
+            langArea.style.display = 'none';
+            iframeContainer.style.display = 'block';
+            backBtn.style.display = 'block';
+            bookingIframe.src = urls[lang];
+        }
+
+        window.goBackToLanguageSelection = function() {
+            langArea.style.display = 'block';
+            iframeContainer.style.display = 'none';
+            backBtn.style.display = 'none';
+            bookingIframe.src = '';
+        }
+
+        // Close on backdrop click for booking modal
+        bookingModal.onclick = (e) => {
+            if (e.target === bookingModal) closeBookingModal();
         }
 
         searchInput.addEventListener('input', (e) => {
