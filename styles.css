@@ -148,6 +148,12 @@ nav {
     padding: 4rem 2rem;
 }
 
+@media (max-width: 768px) {
+    .main-container {
+        padding: 2rem 1rem;
+    }
+}
+
 /* Search & Filters */
 .search-container {
     margin-top: -3.5rem;
@@ -231,9 +237,17 @@ nav {
 /* Inventory Grid */
 .inventory-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .inventory-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+    }
 }
 
 /* Vehicle Card */
@@ -817,17 +831,88 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Navbar Mobile */
+    nav {
+        padding: 0.75rem 1rem;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    .contact-btn {
+        font-size: 0.8rem;
+    }
+
+    /* Hero Mobile */
+    .hero {
+        height: 60vh;
+        min-height: 400px;
+    }
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 2rem auto 0;
+    }
+
+    /* Search Mobile */
+    .search-container {
+        margin-top: -2rem;
+        padding: 1rem;
+    }
+
+    /* Language Selection Mobile */
     .language-selector {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        padding: 10px 20px 40px;
     }
     .lang-card {
         width: 100%;
-        padding: 30px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .lang-flag {
+        font-size: 2.5rem;
+    }
+    .lang-name {
+        font-size: 1.2rem;
+    }
+
+    /* Booking Modal Mobile */
+    .booking-modal-overlay {
+        padding: 0;
     }
     .booking-modal-content {
-        height: 95vh;
-        border-radius: 25px;
+        height: 100vh;
+        border-radius: 0;
+    }
+    .booking-header h2 {
+        font-size: 1.6rem;
+    }
+    .back-btn {
+        top: 15px;
+        left: 15px;
+        padding: 8px 15px;
+        font-size: 0.8rem;
+    }
+    .modal-close {
+        top: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-title {
+        font-size: 1.8rem;
+    }
+    .modal-specs-grid {
+        grid-template-columns: 1fr;
+    }
+    .modal-price-display {
+        font-size: 2rem;
     }
 }
 
