@@ -2434,11 +2434,14 @@ const vehicleData = [
         "vdp_url": "https://rickcasehonda.com/used/Honda/2025-Honda-Accord-00667603ac180e1333104b238936344b.htm",
         "display_name": "2025 HONDA ACCORD LX",
         "image_url": "https://pictures.dealer.com/h/hondadavie/1469/ccc340f5595aae4ab6b717d4a85ad609x.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
-        "local_image": "",
+        "local_image": "images\\1HGCY1F21SA049369\\image_2.jpg",
         "trim": "SE",
         "fuel": "Gasoline",
         "exterior": "Black",
-        "interior": "Black"
+        "interior": "Black",
+        "images": [
+            "images/1HGCY1F21SA049369/image_2.jpg"
+        ]
     },
     {
         "vin": "4T1DAACK5SU564204",
@@ -2607,10 +2610,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2026/Toyota/Tacoma/3TMLB5JN9TM227672/",
         "display_name": "USADO 2026\nTOYOTA TACOMA LIMITED DOBLE CABINA 5' CAMA",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\3TMLB5JN9TM227672\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/3TMLB5JN9TM227672/image_2.jpg",
+            "images/3TMLB5JN9TM227672/image_3.jpg",
+            "images/3TMLB5JN9TM227672/image_4.jpg",
+            "images/3TMLB5JN9TM227672/image_5.jpg",
+            "images/3TMLB5JN9TM227672/image_6.jpg",
+            "images/3TMLB5JN9TM227672/image_7.jpg",
+            "images/3TMLB5JN9TM227672/image_8.jpg",
+            "images/3TMLB5JN9TM227672/image_9.jpg",
+            "images/3TMLB5JN9TM227672/image_10.jpg",
+            "images/3TMLB5JN9TM227672/image_11.jpg",
+            "images/3TMLB5JN9TM227672/image_12.jpg",
+            "images/3TMLB5JN9TM227672/image_13.jpg",
+            "images/3TMLB5JN9TM227672/image_14.jpg",
+            "images/3TMLB5JN9TM227672/image_15.jpg"
+        ]
     },
     {
         "vin": "JTMLWRFV0RD247057",
@@ -2627,10 +2647,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2024/Toyota/RAV4-Hybrid/JTMLWRFV0RD247057/",
         "display_name": "USADO 2024\nTOYOTA RAV4 HYBRID LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\JTMLWRFV0RD247057\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/JTMLWRFV0RD247057/image_2.jpg",
+            "images/JTMLWRFV0RD247057/image_3.jpg",
+            "images/JTMLWRFV0RD247057/image_4.jpg",
+            "images/JTMLWRFV0RD247057/image_5.jpg",
+            "images/JTMLWRFV0RD247057/image_6.jpg",
+            "images/JTMLWRFV0RD247057/image_7.jpg",
+            "images/JTMLWRFV0RD247057/image_8.jpg",
+            "images/JTMLWRFV0RD247057/image_9.jpg",
+            "images/JTMLWRFV0RD247057/image_10.jpg",
+            "images/JTMLWRFV0RD247057/image_11.jpg",
+            "images/JTMLWRFV0RD247057/image_12.jpg",
+            "images/JTMLWRFV0RD247057/image_13.jpg",
+            "images/JTMLWRFV0RD247057/image_14.jpg",
+            "images/JTMLWRFV0RD247057/image_15.jpg"
+        ]
     },
     {
         "vin": "4T1DAACK3SU152606",
@@ -2647,10 +2684,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/Camry/4T1DAACK3SU152606/",
         "display_name": "USADO 2025\nTOYOTA CAMRY LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\4T1DAACK3SU152606\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/4T1DAACK3SU152606/image_1.jpg",
+            "images/4T1DAACK3SU152606/image_2.jpg",
+            "images/4T1DAACK3SU152606/image_3.jpg",
+            "images/4T1DAACK3SU152606/image_4.jpg",
+            "images/4T1DAACK3SU152606/image_5.jpg",
+            "images/4T1DAACK3SU152606/image_6.jpg",
+            "images/4T1DAACK3SU152606/image_7.jpg",
+            "images/4T1DAACK3SU152606/image_8.jpg",
+            "images/4T1DAACK3SU152606/image_9.jpg",
+            "images/4T1DAACK3SU152606/image_10.jpg",
+            "images/4T1DAACK3SU152606/image_11.jpg",
+            "images/4T1DAACK3SU152606/image_12.jpg",
+            "images/4T1DAACK3SU152606/image_13.jpg",
+            "images/4T1DAACK3SU152606/image_14.jpg",
+            "images/4T1DAACK3SU152606/image_15.jpg"
+        ]
     },
     {
         "vin": "JTEBU5JR6K5701943",
@@ -2667,10 +2722,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2019/Toyota/4Runner/JTEBU5JR6K5701943/",
         "display_name": "USADO 2019\nTOYOTA 4RUNNER SR5",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\JTEBU5JR6K5701943\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/JTEBU5JR6K5701943/image_1.jpg",
+            "images/JTEBU5JR6K5701943/image_2.jpg",
+            "images/JTEBU5JR6K5701943/image_3.jpg",
+            "images/JTEBU5JR6K5701943/image_4.jpg",
+            "images/JTEBU5JR6K5701943/image_5.jpg",
+            "images/JTEBU5JR6K5701943/image_6.jpg",
+            "images/JTEBU5JR6K5701943/image_7.jpg",
+            "images/JTEBU5JR6K5701943/image_8.jpg",
+            "images/JTEBU5JR6K5701943/image_9.jpg",
+            "images/JTEBU5JR6K5701943/image_10.jpg",
+            "images/JTEBU5JR6K5701943/image_11.jpg",
+            "images/JTEBU5JR6K5701943/image_12.jpg",
+            "images/JTEBU5JR6K5701943/image_13.jpg",
+            "images/JTEBU5JR6K5701943/image_14.jpg",
+            "images/JTEBU5JR6K5701943/image_15.jpg"
+        ]
     },
     {
         "vin": "WZ1DB0G07TW073998",
