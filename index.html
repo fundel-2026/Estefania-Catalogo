@@ -14,7 +14,10 @@
 <body>
     <nav>
         <div class="logo">DRIVE MIAMI TODAY</div>
-        <a href="tel:+13050000000" class="contact-btn">📞 CONTACT US</a>
+        <div class="nav-links">
+            <a href="https://wa.me/13057489027" target="_blank" class="contact-btn">💬 WHATSAPP</a>
+            <a href="tel:+13057489027" class="contact-btn">📞 CALL</a>
+        </div>
     </nav>
 
     <section class="hero">
@@ -115,6 +118,9 @@
                 <div class="modal-action-area">
                     <div class="modal-price-display" id="modalPrice">Contact Us</div>
                     <button class="modal-cta" onclick="openBookingModal()">Schedule Test Drive</button>
+                    <a href="#" id="whatsappCta" target="_blank" class="modal-cta-whatsapp">
+                        <span>💬</span> Chat on WhatsApp
+                    </a>
                     <button class="modal-cta-secondary" onclick="openQuizModal()">Check Eligibility</button>
                     <p class="modal-footer-msg">Experience premium comfort today.</p>
                 </div>
@@ -175,6 +181,10 @@
     <button class="floating-quiz-btn" onclick="openQuizModal()">
         <span>📝</span> Get Pre-Approved
     </button>
+
+    <a href="https://wa.me/13057489027?text=Hola,%20estoy%20interesado%20en%20ver%20el%20inventario%20de%20vehículos." target="_blank" class="whatsapp-float">
+        <span>💬</span>
+    </a>
 
     <footer>
         <p>&copy; 2026 Drive Miami Today. All rights reserved. Designed for Excellence.</p>
@@ -308,6 +318,10 @@
             if (currentVehicleImages.length === 0) {
                 currentVehicleImages.push('https://via.placeholder.com/1200x800?text=No+Gallery+Images');
             }
+
+            // Update WhatsApp CTA Message
+            const waMsg = encodeURIComponent(`Hola! Estoy interesado en el ${car.year} ${car.make} ${car.model} que vi en su sitio web. ¿Podrían darme más información?`);
+            document.getElementById('whatsappCta').href = `https://wa.me/13057489027?text=${waMsg}`;
 
             currentImageIndex = 0;
             updateModalGallery();

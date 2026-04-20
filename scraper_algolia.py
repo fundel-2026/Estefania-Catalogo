@@ -144,39 +144,57 @@ def main():
             v = transform_hit(hit, "Braman")
             if v:
                 if v["vin"] in all_vehicles:
-                    if not all_vehicles[v["vin"]].get("local_image"):
+                    # Update if current has no image but new one does
+                    if not all_vehicles[v["vin"]].get("local_image") and v.get("image_url"):
                         all_vehicles[v["vin"]].update(v)
                 else:
                     all_vehicles[v["vin"]] = v
-                    print(f"  [+] Nuevo: {v['display_name']}")
+                    print(f"  [+] Nuevo Braman: {v['display_name']}")
 
-    # 2. Hollywood Kia
-    target_vin = "5XYC44JA0SG003168"
-    print(f"\nConsultando Kia VIN: {target_vin}...")
-    res_kia = query_algolia(KIA_CONFIG, f"query={target_vin}&hitsPerPage=1")
+    # 2. Hollywood Kia (All Used)
+    print("\nConsultando Hollywood Kia (Todo el inventario)...")
+    # Usamos hitsPerPage=500 para asegurarnos de traer los ~210 vehículos mencionados
+    # Filtramos por tipo USADO si es posible o traemos todo lo que parezca usado
+    params_kia = "query=&hitsPerPage=500&facetFilters=[\"type:Used\"]"
+    res_kia = query_algolia(KIA_CONFIG, params_kia)
+    
+    if not res_kia or (res_kia and len(res_kia.get("hits", [])) == 0):
+        print("    - Reintentando sin filtro de tipo...")
+        params_kia = "query=&hitsPerPage=500"
+        res_kia = query_algolia(KIA_CONFIG, params_kia)
+
     if res_kia and "hits" in res_kia:
+        print(f"    - Encontrados {len(res_kia['hits'])} vehículos en Kia.")
         for hit in res_kia["hits"]:
             v = transform_hit(hit, "Kia")
             if v:
+                # Filtrar solo usados si no se usó el filtro en la API
+                v_type = hit.get("type", "").lower()
+                if "new" in v_type and "used" not in v_type:
+                    continue
+
                 if v["vin"] in all_vehicles:
-                    if not all_vehicles[v["vin"]].get("local_image"):
-                        all_vehicles[v["vin"]].update(v)
+                    # Update if not fully processed
+                    if not all_vehicles[v["vin"]].get("local_image") and v.get("image_url"):
+                         all_vehicles[v["vin"]].update(v)
                 else:
                     all_vehicles[v["vin"]] = v
-                    print(f"  [+] Kia: {v['display_name']}")
+                    print(f"  [+] Nuevo Kia: {v['display_name']}")
 
     final_data = list(all_vehicles.values())
     for v in final_data:
         if v.get("local_image"):
             v["local_image"] = v["local_image"].replace("/", "\\")
 
+    # Guardar JSON
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_data, f, indent=4, ensure_ascii=False)
     
+    # Guardar JS
     with open(JS_OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write(f"const vehicleData = {json.dumps(final_data, indent=4, ensure_ascii=False)};")
             
-    print(f"\nPROCESO COMPLETADO EXCELENENTE. Total {len(final_data)} vehículos.")
+    print(f"\nPROCESO COMPLETADO. Total {len(final_data)} vehículos en el catálogo.")
 
 if __name__ == "__main__":
     main()
