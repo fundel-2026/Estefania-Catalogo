@@ -1082,14 +1082,18 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2014-honda-odyssey-ex-fwd-4d-passenger-van-5fnrl5h44eb073528/",
         "display_name": "USED 2014 HONDA ODYSSEY",
         "image_url": "https://vehicle-images.carscommerce.inc/a6d5-110006962/5FNRL5H44EB073528/thumbnails/large/85ac901bdc31162426adc2f28bdcf841.jpg",
-        "local_image": "images\\5FNRL5H44EB073528.jpg",
+        "local_image": "images\\5FNRL5H44EB073528\\image_1.jpg",
         "trim": "Sale In Miami, FL",
         "fuel": "",
         "exterior": "still night pearl",
         "interior": "black",
         "location": "Miami, FL",
         "description": "",
-        "images": []
+        "images": [
+            "images/5FNRL5H44EB073528/image_1.jpg",
+            "images/5FNRL5H44EB073528/image_2.jpg",
+            "images/5FNRL5H44EB073528/image_3.jpg"
+        ]
     },
     {
         "vin": "2T3WFREV3GW236035",
@@ -1106,14 +1110,26 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2016-toyota-rav4-xle-fwd-4d-sport-utility-2t3wfrev3gw236035/",
         "display_name": "USED 2016 TOYOTA RAV4",
         "image_url": "https://vehicle-images.carscommerce.inc/f5c2-110006962/2T3WFREV3GW236035/thumbnails/large/241062baa2543a4674bd9685d05f1bee.jpg",
-        "local_image": "images\\2T3WFREV3GW236035.jpg",
+        "local_image": "images\\2T3WFREV3GW236035\\image_1.jpg",
         "trim": "Sale In Miami, FL",
         "fuel": "",
         "exterior": "still night pearl",
         "interior": "black",
         "location": "Miami, FL",
         "description": "",
-        "images": []
+        "images": [
+            "images/2T3WFREV3GW236035/image_1.jpg",
+            "images/2T3WFREV3GW236035/image_6.jpg",
+            "images/2T3WFREV3GW236035/image_7.jpg",
+            "images/2T3WFREV3GW236035/image_8.jpg",
+            "images/2T3WFREV3GW236035/image_9.jpg",
+            "images/2T3WFREV3GW236035/image_10.jpg",
+            "images/2T3WFREV3GW236035/image_11.jpg",
+            "images/2T3WFREV3GW236035/image_12.jpg",
+            "images/2T3WFREV3GW236035/image_13.jpg",
+            "images/2T3WFREV3GW236035/image_14.jpg",
+            "images/2T3WFREV3GW236035/image_15.jpg"
+        ]
     },
     {
         "vin": "2FMPK4J90LBA96286",
@@ -1130,14 +1146,30 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2020-ford-edge-sel-awd-4d-sport-utility-2fmpk4j90lba96286/",
         "display_name": "USED 2020 FORD EDGE",
         "image_url": "https://vehicle-images.carscommerce.inc/66c1-110006962/2FMPK4J90LBA96286/thumbnails/large/4042dd8527fafe3851d0f06c91c036b0.jpg",
-        "local_image": "images\\2FMPK4J90LBA96286.jpg",
+        "local_image": "images\\2FMPK4J90LBA96286\\image_1.jpg",
         "trim": "Sale In Miami, FL",
         "fuel": "",
         "exterior": "still night pearl",
         "interior": "black",
         "location": "Miami, FL",
         "description": "",
-        "images": []
+        "images": [
+            "images/2FMPK4J90LBA96286/image_1.jpg",
+            "images/2FMPK4J90LBA96286/image_2.jpg",
+            "images/2FMPK4J90LBA96286/image_3.jpg",
+            "images/2FMPK4J90LBA96286/image_4.jpg",
+            "images/2FMPK4J90LBA96286/image_5.jpg",
+            "images/2FMPK4J90LBA96286/image_6.jpg",
+            "images/2FMPK4J90LBA96286/image_7.jpg",
+            "images/2FMPK4J90LBA96286/image_8.jpg",
+            "images/2FMPK4J90LBA96286/image_9.jpg",
+            "images/2FMPK4J90LBA96286/image_10.jpg",
+            "images/2FMPK4J90LBA96286/image_11.jpg",
+            "images/2FMPK4J90LBA96286/image_12.jpg",
+            "images/2FMPK4J90LBA96286/image_13.jpg",
+            "images/2FMPK4J90LBA96286/image_14.jpg",
+            "images/2FMPK4J90LBA96286/image_15.jpg"
+        ]
     },
     {
         "vin": "KNDJ63AU1L7725267",
@@ -1463,14 +1495,30 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-honda-civic-sedan-2-0l-4d-sport-fwd-sd-2hgfe2f53rh520004/",
         "display_name": "USED 2024 HONDA CIVIC SEDAN",
         "image_url": "https://vehicle-images.carscommerce.inc/f857-110006962/2HGFE2F53RH520004/thumbnails/large/3999cbaaff800af4739372519a2769c7.jpg",
-        "local_image": "images\\2HGFE2F53RH520004.jpg",
+        "local_image": "images\\2HGFE2F53RH520004\\image_1.jpg",
         "trim": "Sale In Miami, FL",
         "fuel": "",
         "exterior": "still night pearl",
         "interior": "black",
         "location": "Miami, FL",
         "description": "",
-        "images": []
+        "images": [
+            "images/2HGFE2F53RH520004/image_1.jpg",
+            "images/2HGFE2F53RH520004/image_2.jpg",
+            "images/2HGFE2F53RH520004/image_3.jpg",
+            "images/2HGFE2F53RH520004/image_4.jpg",
+            "images/2HGFE2F53RH520004/image_5.jpg",
+            "images/2HGFE2F53RH520004/image_6.jpg",
+            "images/2HGFE2F53RH520004/image_7.jpg",
+            "images/2HGFE2F53RH520004/image_8.jpg",
+            "images/2HGFE2F53RH520004/image_9.jpg",
+            "images/2HGFE2F53RH520004/image_10.jpg",
+            "images/2HGFE2F53RH520004/image_11.jpg",
+            "images/2HGFE2F53RH520004/image_12.jpg",
+            "images/2HGFE2F53RH520004/image_13.jpg",
+            "images/2HGFE2F53RH520004/image_14.jpg",
+            "images/2HGFE2F53RH520004/image_15.jpg"
+        ]
     },
     {
         "vin": "1C6HJTAG7ML536551",
@@ -1841,14 +1889,30 @@ const vehicleData = [
         "vdp_url": "https://www.bramanhonda.com/inventory/used-2024-honda-odyssey-ex-l-fwd-uv-5fnrl6h6xrb032981/",
         "display_name": "USED 2024 HONDA ODYSSEY",
         "image_url": "https://vehicle-images.carscommerce.inc/d4b9-110006962/5FNRL6H6XRB032981/thumbnails/large/9cc947ccfc5c8ed8b9da0da2ceaa946b.jpg",
-        "local_image": "images\\5FNRL6H6XRB032981.jpg",
+        "local_image": "images\\5FNRL6H6XRB032981\\image_1.jpg",
         "trim": "Sale In Miami, FL",
         "fuel": "",
         "exterior": "still night pearl",
         "interior": "black",
         "location": "Miami, FL",
         "description": "",
-        "images": []
+        "images": [
+            "images/5FNRL6H6XRB032981/image_1.jpg",
+            "images/5FNRL6H6XRB032981/image_2.jpg",
+            "images/5FNRL6H6XRB032981/image_3.jpg",
+            "images/5FNRL6H6XRB032981/image_4.jpg",
+            "images/5FNRL6H6XRB032981/image_5.jpg",
+            "images/5FNRL6H6XRB032981/image_6.jpg",
+            "images/5FNRL6H6XRB032981/image_7.jpg",
+            "images/5FNRL6H6XRB032981/image_8.jpg",
+            "images/5FNRL6H6XRB032981/image_9.jpg",
+            "images/5FNRL6H6XRB032981/image_10.jpg",
+            "images/5FNRL6H6XRB032981/image_11.jpg",
+            "images/5FNRL6H6XRB032981/image_12.jpg",
+            "images/5FNRL6H6XRB032981/image_13.jpg",
+            "images/5FNRL6H6XRB032981/image_14.jpg",
+            "images/5FNRL6H6XRB032981/image_15.jpg"
+        ]
     },
     {
         "vin": "KNDNB5K34T6553241",
@@ -2276,11 +2340,14 @@ const vehicleData = [
         "vdp_url": "https://rickcasehonda.com/used/Honda/2025-Honda-CR-V-Hybrid-9045ad63ac18558956c42b74f5d63d28.htm",
         "display_name": "2025 HONDA CR-V HYBRID SPORT-L",
         "image_url": "https://pictures.dealer.com/h/hondadavie/0432/e9dcd72317bcb748ab80c6f1acba04fax.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
-        "local_image": "",
+        "local_image": "images\\7FARS5H86SE024529\\image_2.jpg",
         "trim": "LX",
         "fuel": "Gasoline",
         "exterior": "Blue",
-        "interior": "Black"
+        "interior": "Black",
+        "images": [
+            "images/7FARS5H86SE024529/image_2.jpg"
+        ]
     },
     {
         "vin": "7FARS5H88SE035726",
@@ -2297,11 +2364,14 @@ const vehicleData = [
         "vdp_url": "https://rickcasehonda.com/used/Honda/2025-Honda-CR-V-Hybrid-f7d41340ac18077c4d04a698a6fc637d.htm",
         "display_name": "2025 HONDA CR-V HYBRID SPORT-L",
         "image_url": "https://pictures.dealer.com/h/hondadavie/1445/4e05123e08d5cc7f1a67a33ff49c63c2x.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
-        "local_image": "",
+        "local_image": "images\\7FARS5H88SE035726\\image_2.jpg",
         "trim": "LX",
         "fuel": "Gasoline",
         "exterior": "Blue",
-        "interior": "Black"
+        "interior": "Black",
+        "images": [
+            "images/7FARS5H88SE035726/image_2.jpg"
+        ]
     },
     {
         "vin": "2HGFE4F84SH327971",
@@ -2318,9 +2388,12 @@ const vehicleData = [
         "vdp_url": "https://rickcasehonda.com/used/Honda/2025-Honda-Civic-Hybrid-8c29394dac180d58331a852ca704a60f.htm",
         "display_name": "2025 HONDA CIVIC HYBRID SPORT",
         "image_url": "https://pictures.dealer.com/h/hondadavie/0353/39a60860f0fbcf14c3d87f3ba4331506x.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
-        "local_image": "",
+        "local_image": "images\\2HGFE4F84SH327971\\image_2.jpg",
         "trim": "LX",
-        "fuel": "Gasoline"
+        "fuel": "Gasoline",
+        "images": [
+            "images/2HGFE4F84SH327971/image_2.jpg"
+        ]
     },
     {
         "vin": "1HGCY1F35RA067697",
@@ -2337,11 +2410,14 @@ const vehicleData = [
         "vdp_url": "https://rickcasehonda.com/used/Honda/2024-Honda-Accord-0066772cac1833327e7ab92e01230cdb.htm",
         "display_name": "2024 HONDA ACCORD EX",
         "image_url": "https://pictures.dealer.com/h/hondadavie/1653/cebfbca1055724d58c620ea3a1a941c1x.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
-        "local_image": "",
+        "local_image": "images\\1HGCY1F35RA067697\\image_2.jpg",
         "trim": "SE",
         "fuel": "Gasoline",
         "exterior": "Black",
-        "interior": "Black"
+        "interior": "Black",
+        "images": [
+            "images/1HGCY1F35RA067697/image_2.jpg"
+        ]
     },
     {
         "vin": "1HGCY1F21SA049369",
@@ -2358,11 +2434,14 @@ const vehicleData = [
         "vdp_url": "https://rickcasehonda.com/used/Honda/2025-Honda-Accord-00667603ac180e1333104b238936344b.htm",
         "display_name": "2025 HONDA ACCORD LX",
         "image_url": "https://pictures.dealer.com/h/hondadavie/1469/ccc340f5595aae4ab6b717d4a85ad609x.jpg?impolicy=downsize_bkpt&imdensity=1&w=520",
-        "local_image": "",
+        "local_image": "images\\1HGCY1F21SA049369\\image_2.jpg",
         "trim": "SE",
         "fuel": "Gasoline",
         "exterior": "Black",
-        "interior": "Black"
+        "interior": "Black",
+        "images": [
+            "images/1HGCY1F21SA049369/image_2.jpg"
+        ]
     },
     {
         "vin": "4T1DAACK5SU564204",
@@ -2531,13 +2610,12 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2026/Toyota/Tacoma/3TMLB5JN9TM227672/",
         "display_name": "USADO 2026\nTOYOTA TACOMA LIMITED DOBLE CABINA 5' CAMA",
         "image_url": null,
-        "local_image": "images\\3TMLB5JN9TM227672\\image_1.jpg",
+        "local_image": "images\\3TMLB5JN9TM227672\\image_2.jpg",
         "trim": "",
         "fuel": null,
         "exterior": "",
         "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
         "images": [
-            "images/3TMLB5JN9TM227672/image_1.jpg",
             "images/3TMLB5JN9TM227672/image_2.jpg",
             "images/3TMLB5JN9TM227672/image_3.jpg",
             "images/3TMLB5JN9TM227672/image_4.jpg",
@@ -2682,13 +2760,12 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2026/Toyota/GR-Supra/WZ1DB0G07TW073998/",
         "display_name": "USADO 2026\nTOYOTA GR SUPRA MKV FINAL EDITION",
         "image_url": null,
-        "local_image": "images\\WZ1DB0G07TW073998\\image_1.jpg",
+        "local_image": "images\\WZ1DB0G07TW073998\\image_2.jpg",
         "trim": "",
         "fuel": null,
         "exterior": "",
         "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
         "images": [
-            "images/WZ1DB0G07TW073998/image_1.jpg",
             "images/WZ1DB0G07TW073998/image_2.jpg",
             "images/WZ1DB0G07TW073998/image_3.jpg",
             "images/WZ1DB0G07TW073998/image_4.jpg",
@@ -2872,13 +2949,12 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/Crown/JTDAAAAF9S3035597/",
         "display_name": "USADO 2025\nTOYOTA CROWN XLE",
         "image_url": null,
-        "local_image": "images\\JTDAAAAF9S3035597\\image_1.jpg",
+        "local_image": "images\\JTDAAAAF9S3035597\\image_2.jpg",
         "trim": "",
         "fuel": null,
         "exterior": "",
         "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
         "images": [
-            "images/JTDAAAAF9S3035597/image_1.jpg",
             "images/JTDAAAAF9S3035597/image_2.jpg",
             "images/JTDAAAAF9S3035597/image_3.jpg",
             "images/JTDAAAAF9S3035597/image_4.jpg",
@@ -2910,10 +2986,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2022/Toyota/Corolla/JTDS4MCE4N3505864/",
         "display_name": "USADO 2022\nTOYOTA COROLLA SE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\JTDS4MCE4N3505864\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/JTDS4MCE4N3505864/image_1.jpg",
+            "images/JTDS4MCE4N3505864/image_2.jpg",
+            "images/JTDS4MCE4N3505864/image_3.jpg",
+            "images/JTDS4MCE4N3505864/image_4.jpg",
+            "images/JTDS4MCE4N3505864/image_5.jpg",
+            "images/JTDS4MCE4N3505864/image_6.jpg",
+            "images/JTDS4MCE4N3505864/image_7.jpg",
+            "images/JTDS4MCE4N3505864/image_8.jpg",
+            "images/JTDS4MCE4N3505864/image_9.jpg",
+            "images/JTDS4MCE4N3505864/image_10.jpg",
+            "images/JTDS4MCE4N3505864/image_11.jpg",
+            "images/JTDS4MCE4N3505864/image_12.jpg",
+            "images/JTDS4MCE4N3505864/image_13.jpg",
+            "images/JTDS4MCE4N3505864/image_14.jpg",
+            "images/JTDS4MCE4N3505864/image_15.jpg"
+        ]
     },
     {
         "vin": "3TMAZ5CNXKM085394",
@@ -2930,10 +3024,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2019/Toyota/Tacoma/3TMAZ5CNXKM085394/",
         "display_name": "USADO 2019\nTOYOTA TACOMA TRD SPORT DOBLE CABINA 5' CAMA",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\3TMAZ5CNXKM085394\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/3TMAZ5CNXKM085394/image_1.jpg",
+            "images/3TMAZ5CNXKM085394/image_2.jpg",
+            "images/3TMAZ5CNXKM085394/image_3.jpg",
+            "images/3TMAZ5CNXKM085394/image_4.jpg",
+            "images/3TMAZ5CNXKM085394/image_5.jpg",
+            "images/3TMAZ5CNXKM085394/image_6.jpg",
+            "images/3TMAZ5CNXKM085394/image_7.jpg",
+            "images/3TMAZ5CNXKM085394/image_8.jpg",
+            "images/3TMAZ5CNXKM085394/image_9.jpg",
+            "images/3TMAZ5CNXKM085394/image_10.jpg",
+            "images/3TMAZ5CNXKM085394/image_11.jpg",
+            "images/3TMAZ5CNXKM085394/image_12.jpg",
+            "images/3TMAZ5CNXKM085394/image_13.jpg",
+            "images/3TMAZ5CNXKM085394/image_14.jpg",
+            "images/3TMAZ5CNXKM085394/image_15.jpg"
+        ]
     },
     {
         "vin": "2T1BURHE7HC862666",
@@ -2950,10 +3062,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2017/Toyota/Corolla/2T1BURHE7HC862666/",
         "display_name": "USADO 2017\nTOYOTA COROLLA LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\2T1BURHE7HC862666\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/2T1BURHE7HC862666/image_1.jpg",
+            "images/2T1BURHE7HC862666/image_2.jpg",
+            "images/2T1BURHE7HC862666/image_3.jpg",
+            "images/2T1BURHE7HC862666/image_4.jpg",
+            "images/2T1BURHE7HC862666/image_5.jpg",
+            "images/2T1BURHE7HC862666/image_6.jpg",
+            "images/2T1BURHE7HC862666/image_7.jpg",
+            "images/2T1BURHE7HC862666/image_8.jpg",
+            "images/2T1BURHE7HC862666/image_9.jpg",
+            "images/2T1BURHE7HC862666/image_10.jpg",
+            "images/2T1BURHE7HC862666/image_11.jpg",
+            "images/2T1BURHE7HC862666/image_12.jpg",
+            "images/2T1BURHE7HC862666/image_13.jpg",
+            "images/2T1BURHE7HC862666/image_14.jpg",
+            "images/2T1BURHE7HC862666/image_15.jpg"
+        ]
     },
     {
         "vin": "5YFB4MDE3RP190969",
@@ -2970,10 +3100,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2024/Toyota/Corolla/5YFB4MDE3RP190969/",
         "display_name": "USADO 2024\nTOYOTA COROLLA LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\5YFB4MDE3RP190969\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/5YFB4MDE3RP190969/image_1.jpg",
+            "images/5YFB4MDE3RP190969/image_2.jpg",
+            "images/5YFB4MDE3RP190969/image_3.jpg",
+            "images/5YFB4MDE3RP190969/image_4.jpg",
+            "images/5YFB4MDE3RP190969/image_5.jpg",
+            "images/5YFB4MDE3RP190969/image_6.jpg",
+            "images/5YFB4MDE3RP190969/image_7.jpg",
+            "images/5YFB4MDE3RP190969/image_8.jpg",
+            "images/5YFB4MDE3RP190969/image_9.jpg",
+            "images/5YFB4MDE3RP190969/image_10.jpg",
+            "images/5YFB4MDE3RP190969/image_11.jpg",
+            "images/5YFB4MDE3RP190969/image_12.jpg",
+            "images/5YFB4MDE3RP190969/image_13.jpg",
+            "images/5YFB4MDE3RP190969/image_14.jpg",
+            "images/5YFB4MDE3RP190969/image_15.jpg"
+        ]
     },
     {
         "vin": "JTEVA5BR0S5011495",
@@ -2990,10 +3138,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/4Runner/JTEVA5BR0S5011495/",
         "display_name": "USADO 2025\nTOYOTA 4RUNNER SPORT",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\JTEVA5BR0S5011495\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/JTEVA5BR0S5011495/image_2.jpg",
+            "images/JTEVA5BR0S5011495/image_3.jpg",
+            "images/JTEVA5BR0S5011495/image_4.jpg",
+            "images/JTEVA5BR0S5011495/image_5.jpg",
+            "images/JTEVA5BR0S5011495/image_6.jpg",
+            "images/JTEVA5BR0S5011495/image_7.jpg",
+            "images/JTEVA5BR0S5011495/image_8.jpg",
+            "images/JTEVA5BR0S5011495/image_9.jpg",
+            "images/JTEVA5BR0S5011495/image_10.jpg",
+            "images/JTEVA5BR0S5011495/image_11.jpg",
+            "images/JTEVA5BR0S5011495/image_12.jpg",
+            "images/JTEVA5BR0S5011495/image_13.jpg",
+            "images/JTEVA5BR0S5011495/image_14.jpg",
+            "images/JTEVA5BR0S5011495/image_15.jpg"
+        ]
     },
     {
         "vin": "4T1DAACKXSU110594",
@@ -3010,10 +3175,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/Camry/4T1DAACKXSU110594/",
         "display_name": "USADO 2025\nTOYOTA CAMRY SE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\4T1DAACKXSU110594\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/4T1DAACKXSU110594/image_2.jpg",
+            "images/4T1DAACKXSU110594/image_3.jpg",
+            "images/4T1DAACKXSU110594/image_4.jpg",
+            "images/4T1DAACKXSU110594/image_5.jpg",
+            "images/4T1DAACKXSU110594/image_6.jpg",
+            "images/4T1DAACKXSU110594/image_7.jpg",
+            "images/4T1DAACKXSU110594/image_8.jpg",
+            "images/4T1DAACKXSU110594/image_9.jpg",
+            "images/4T1DAACKXSU110594/image_10.jpg",
+            "images/4T1DAACKXSU110594/image_11.jpg",
+            "images/4T1DAACKXSU110594/image_12.jpg",
+            "images/4T1DAACKXSU110594/image_13.jpg",
+            "images/4T1DAACKXSU110594/image_14.jpg",
+            "images/4T1DAACKXSU110594/image_15.jpg"
+        ]
     },
     {
         "vin": "4T1BF1FK6GU167693",
@@ -3030,10 +3212,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2016/Toyota/Camry/4T1BF1FK6GU167693/",
         "display_name": "USADO 2016\nTOYOTA CAMRY LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\4T1BF1FK6GU167693\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/4T1BF1FK6GU167693/image_1.jpg",
+            "images/4T1BF1FK6GU167693/image_2.jpg",
+            "images/4T1BF1FK6GU167693/image_3.jpg",
+            "images/4T1BF1FK6GU167693/image_4.jpg",
+            "images/4T1BF1FK6GU167693/image_5.jpg",
+            "images/4T1BF1FK6GU167693/image_6.jpg",
+            "images/4T1BF1FK6GU167693/image_7.jpg",
+            "images/4T1BF1FK6GU167693/image_8.jpg",
+            "images/4T1BF1FK6GU167693/image_9.jpg",
+            "images/4T1BF1FK6GU167693/image_10.jpg",
+            "images/4T1BF1FK6GU167693/image_11.jpg",
+            "images/4T1BF1FK6GU167693/image_12.jpg",
+            "images/4T1BF1FK6GU167693/image_13.jpg",
+            "images/4T1BF1FK6GU167693/image_14.jpg",
+            "images/4T1BF1FK6GU167693/image_15.jpg"
+        ]
     },
     {
         "vin": "5YFB4MDE7TP360273",
@@ -3050,10 +3250,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2026/Toyota/Corolla/5YFB4MDE7TP360273/",
         "display_name": "USADO 2026\nTOYOTA COROLLA LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\5YFB4MDE7TP360273\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/5YFB4MDE7TP360273/image_1.jpg",
+            "images/5YFB4MDE7TP360273/image_2.jpg",
+            "images/5YFB4MDE7TP360273/image_3.jpg",
+            "images/5YFB4MDE7TP360273/image_4.jpg",
+            "images/5YFB4MDE7TP360273/image_5.jpg",
+            "images/5YFB4MDE7TP360273/image_6.jpg",
+            "images/5YFB4MDE7TP360273/image_7.jpg",
+            "images/5YFB4MDE7TP360273/image_8.jpg",
+            "images/5YFB4MDE7TP360273/image_9.jpg",
+            "images/5YFB4MDE7TP360273/image_10.jpg",
+            "images/5YFB4MDE7TP360273/image_11.jpg",
+            "images/5YFB4MDE7TP360273/image_12.jpg",
+            "images/5YFB4MDE7TP360273/image_13.jpg",
+            "images/5YFB4MDE7TP360273/image_14.jpg",
+            "images/5YFB4MDE7TP360273/image_15.jpg"
+        ]
     },
     {
         "vin": "4T1BF1FK7GU194112",
@@ -3070,10 +3288,28 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2016/Toyota/Camry/4T1BF1FK7GU194112/",
         "display_name": "USADO 2016\nTOYOTA CAMRY LE",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\4T1BF1FK7GU194112\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/4T1BF1FK7GU194112/image_1.jpg",
+            "images/4T1BF1FK7GU194112/image_2.jpg",
+            "images/4T1BF1FK7GU194112/image_3.jpg",
+            "images/4T1BF1FK7GU194112/image_4.jpg",
+            "images/4T1BF1FK7GU194112/image_5.jpg",
+            "images/4T1BF1FK7GU194112/image_6.jpg",
+            "images/4T1BF1FK7GU194112/image_7.jpg",
+            "images/4T1BF1FK7GU194112/image_8.jpg",
+            "images/4T1BF1FK7GU194112/image_9.jpg",
+            "images/4T1BF1FK7GU194112/image_10.jpg",
+            "images/4T1BF1FK7GU194112/image_11.jpg",
+            "images/4T1BF1FK7GU194112/image_12.jpg",
+            "images/4T1BF1FK7GU194112/image_13.jpg",
+            "images/4T1BF1FK7GU194112/image_14.jpg",
+            "images/4T1BF1FK7GU194112/image_15.jpg"
+        ]
     },
     {
         "vin": "JTDBCMFE0S3099463",
@@ -3090,10 +3326,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2025/Toyota/Corolla-Hybrid/JTDBCMFE0S3099463/",
         "display_name": "USADO 2025\nTOYOTA COROLLA HYBRID LE",
         "image_url": "https://assets.cai-media-management.com/resize/640x640/common-vehicle-media/e67ad430-b4be-4054-baac-26aeb157a38f.jpg",
-        "local_image": "images\\JTDBCMFE0S3099463\\image_1.jpg",
+        "local_image": "images\\JTDBCMFE0S3099463\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/JTDBCMFE0S3099463/image_2.jpg",
+            "images/JTDBCMFE0S3099463/image_3.jpg",
+            "images/JTDBCMFE0S3099463/image_4.jpg",
+            "images/JTDBCMFE0S3099463/image_5.jpg",
+            "images/JTDBCMFE0S3099463/image_6.jpg",
+            "images/JTDBCMFE0S3099463/image_7.jpg",
+            "images/JTDBCMFE0S3099463/image_8.jpg",
+            "images/JTDBCMFE0S3099463/image_9.jpg",
+            "images/JTDBCMFE0S3099463/image_10.jpg",
+            "images/JTDBCMFE0S3099463/image_11.jpg",
+            "images/JTDBCMFE0S3099463/image_12.jpg",
+            "images/JTDBCMFE0S3099463/image_13.jpg",
+            "images/JTDBCMFE0S3099463/image_14.jpg",
+            "images/JTDBCMFE0S3099463/image_15.jpg"
+        ]
     },
     {
         "vin": "5TDGZRAH4NS090545",
@@ -3113,7 +3366,25 @@ const vehicleData = [
         "local_image": "images\\5TDGZRAH4NS090545\\image_1.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "interior": "3tylb5jn0rt048045\n    existencias: r0480450",
+        "images": [
+            "images/5TDGZRAH4NS090545/image_1.jpg",
+            "images/5TDGZRAH4NS090545/image_2.jpg",
+            "images/5TDGZRAH4NS090545/image_3.jpg",
+            "images/5TDGZRAH4NS090545/image_4.jpg",
+            "images/5TDGZRAH4NS090545/image_5.jpg",
+            "images/5TDGZRAH4NS090545/image_6.jpg",
+            "images/5TDGZRAH4NS090545/image_7.jpg",
+            "images/5TDGZRAH4NS090545/image_8.jpg",
+            "images/5TDGZRAH4NS090545/image_9.jpg",
+            "images/5TDGZRAH4NS090545/image_10.jpg",
+            "images/5TDGZRAH4NS090545/image_11.jpg",
+            "images/5TDGZRAH4NS090545/image_12.jpg",
+            "images/5TDGZRAH4NS090545/image_13.jpg",
+            "images/5TDGZRAH4NS090545/image_14.jpg",
+            "images/5TDGZRAH4NS090545/image_15.jpg"
+        ]
     },
     {
         "vin": "5TDGZRAH4NS126525",
@@ -3130,10 +3401,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2022/Toyota/Highlander/5TDGZRAH4NS126525/",
         "display_name": "USADO 2022\nTOYOTA HIGHLANDER XLE",
         "image_url": "https://assets.cai-media-management.com/resize/640x640/common-vehicle-media/b2a255df-4f4e-4e5e-9385-e1e83dfab8bf.jpg",
-        "local_image": "images\\5TDGZRAH4NS126525\\image_1.jpg",
+        "local_image": "images\\5TDGZRAH4NS126525\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/5TDGZRAH4NS126525/image_2.jpg",
+            "images/5TDGZRAH4NS126525/image_3.jpg",
+            "images/5TDGZRAH4NS126525/image_4.jpg",
+            "images/5TDGZRAH4NS126525/image_5.jpg",
+            "images/5TDGZRAH4NS126525/image_6.jpg",
+            "images/5TDGZRAH4NS126525/image_7.jpg",
+            "images/5TDGZRAH4NS126525/image_8.jpg",
+            "images/5TDGZRAH4NS126525/image_9.jpg",
+            "images/5TDGZRAH4NS126525/image_10.jpg",
+            "images/5TDGZRAH4NS126525/image_11.jpg",
+            "images/5TDGZRAH4NS126525/image_12.jpg",
+            "images/5TDGZRAH4NS126525/image_13.jpg",
+            "images/5TDGZRAH4NS126525/image_14.jpg",
+            "images/5TDGZRAH4NS126525/image_15.jpg"
+        ]
     },
     {
         "vin": "JTMD6RFV6LD004204",
@@ -3150,10 +3438,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2020/Toyota/RAV4-Hybrid/JTMD6RFV6LD004204/",
         "display_name": "USADO 2020\nTOYOTA RAV4 HYBRID LIMITED",
         "image_url": "https://assets.cai-media-management.com/resize/640x640/common-vehicle-media/0f04adeb-f7a0-478c-9bb2-2ef006132cda.jpg",
-        "local_image": "images\\JTMD6RFV6LD004204\\image_1.jpg",
+        "local_image": "images\\JTMD6RFV6LD004204\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/JTMD6RFV6LD004204/image_2.jpg",
+            "images/JTMD6RFV6LD004204/image_3.jpg",
+            "images/JTMD6RFV6LD004204/image_4.jpg",
+            "images/JTMD6RFV6LD004204/image_5.jpg",
+            "images/JTMD6RFV6LD004204/image_6.jpg",
+            "images/JTMD6RFV6LD004204/image_7.jpg",
+            "images/JTMD6RFV6LD004204/image_8.jpg",
+            "images/JTMD6RFV6LD004204/image_9.jpg",
+            "images/JTMD6RFV6LD004204/image_10.jpg",
+            "images/JTMD6RFV6LD004204/image_11.jpg",
+            "images/JTMD6RFV6LD004204/image_12.jpg",
+            "images/JTMD6RFV6LD004204/image_13.jpg",
+            "images/JTMD6RFV6LD004204/image_14.jpg",
+            "images/JTMD6RFV6LD004204/image_15.jpg"
+        ]
     },
     {
         "vin": "JTEKU5JR6P6206174",
@@ -3170,10 +3475,27 @@ const vehicleData = [
         "vdp_url": "https://www.toyotaofhollywood.com/vehicle/Used/2023/Toyota/4Runner/JTEKU5JR6P6206174/",
         "display_name": "USADO 2023\nTOYOTA 4RUNNER LIMITED",
         "image_url": null,
-        "local_image": "",
+        "local_image": "images\\JTEKU5JR6P6206174\\image_2.jpg",
         "trim": "",
         "fuel": null,
-        "exterior": ""
+        "exterior": "",
+        "interior": "ventas, servicio, alquiler, repuestos, reparación de carrocería y mucho más.",
+        "images": [
+            "images/JTEKU5JR6P6206174/image_2.jpg",
+            "images/JTEKU5JR6P6206174/image_3.jpg",
+            "images/JTEKU5JR6P6206174/image_4.jpg",
+            "images/JTEKU5JR6P6206174/image_5.jpg",
+            "images/JTEKU5JR6P6206174/image_6.jpg",
+            "images/JTEKU5JR6P6206174/image_7.jpg",
+            "images/JTEKU5JR6P6206174/image_8.jpg",
+            "images/JTEKU5JR6P6206174/image_9.jpg",
+            "images/JTEKU5JR6P6206174/image_10.jpg",
+            "images/JTEKU5JR6P6206174/image_11.jpg",
+            "images/JTEKU5JR6P6206174/image_12.jpg",
+            "images/JTEKU5JR6P6206174/image_13.jpg",
+            "images/JTEKU5JR6P6206174/image_14.jpg",
+            "images/JTEKU5JR6P6206174/image_15.jpg"
+        ]
     },
     {
         "vin": "2T3N1RFV5PW340888",
